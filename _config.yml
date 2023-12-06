@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Xinyu Pu"
-  avatar           : "profile.png"
+  avatar           : "pp.jpg"
   bio              : #"Your biography for the left-hand sidebar"
   location         : "China"
   employer         :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/LttGenius"
+  github           : "LttGenius"
   google_plus      :
   keybase          :
   instagram        :
