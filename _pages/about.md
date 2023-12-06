@@ -19,5 +19,5 @@ My current research focues on **Machine Learning** and **Data Mining**.
 My interests are on **Multiview Clustering** and **Graph Learning**, especially explorations on imcomplete multiview data. 
 In a word, I have a passion for Artificial Intelligence and wish to propose meaningful works. 
 
-News and Update
+News and Updates
 ======
