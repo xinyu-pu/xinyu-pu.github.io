@@ -10,6 +10,6 @@ paperurl: 'https://doi.org/10.3390/math11132940'
 ---
 This paper is about the number 1. The number 2 is left for future work.
 
-[paper](http://academicpages.github.io/files/paper1.pdf)
+[[paper]](http://academicpages.github.io/files/paper1.pdf)
 [code]
 [bibtex]
