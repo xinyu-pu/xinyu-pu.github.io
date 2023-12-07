@@ -19,8 +19,8 @@ collection: portfolio
 <br />
 
 <p align="center">
-  <a href="../images/furnace.png">
-    <img src="../images/furnace.png" alt="Logo" width="80" height="80">
+  <a href='../images/furnace.png'>
+    <img src='../images/furnace.png' alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">FURNACE</h3>
