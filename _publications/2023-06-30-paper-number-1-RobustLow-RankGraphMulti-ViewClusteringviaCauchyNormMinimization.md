@@ -8,7 +8,7 @@ venue: 'Mathematics'
 paperurl: 'https://doi.org/10.3390/math11132940'
 ---
 
-<img src='https://lttgenius.github.io/puxinyu.github.io/images/flow.png'>
+<img src='https://xinyu-pu.github.io/images/flow.png'>
 
 Abstract
 ===
