@@ -27,7 +27,7 @@ layout: default
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
           {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
-          {% if page.authors %}<meta itemprop="name">{{ page.authors | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          {% if page.authors %}<meta itemprop="name">{{ page.authors | markdownify | remove: "<p>" | remove: "</p>" }}{% endif %}
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
@@ -38,7 +38,7 @@ layout: default
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.authors %}
-        <p><i>{{ page.authors }}</i> <br /></p>
+        <meta itemprop="name">{{ page.authors | markdownify | remove: "<p>" | remove: "</p>" }}
         {% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
