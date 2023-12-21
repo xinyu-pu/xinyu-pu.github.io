@@ -1,7 +1,7 @@
 ---
 title: "Robust Weighted Low-Rank Tensor Approximation for Multiview Clustering With Mixed Noise"
 collection: publications
-authors: Xinyu Pu, Hangjun Che, Member, IEEE, Baicheng Pan, Man-Fai Leung, and Shiping Wen
+authors: <b>Xinyu Pu</based>, Hangjun Che, Member, IEEE, Baicheng Pan, Man-Fai Leung, and Shiping Wen
 permalink: /publication/2023-10-31-paper-number-2-RobustWeightedLow-RankTensorApproximationforMultiviewClusteringWithMixedNoise
 excerpt: "In this paper, a robust multiview clustering method referred to as RWLTA is developed to handle the mixed noise embedding in the real-world datasets. The weighted low-rank tensor approximation and unique mixed noise handling norms are utilized to guarantee performance and robustness."
 date: 2023-10-31
