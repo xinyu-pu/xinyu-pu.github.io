@@ -8,7 +8,7 @@ venue: 'Mathematics'
 paperurl: 'https://doi.org/10.3390/math11132940'
 ---
 
-<img src='https://xinyu-pu.github.io/images/flow.png'>
+<img src='https://xinyu-pu.github.io/images/publication1flow.png'>
  
 Abstract
 ===
@@ -17,4 +17,4 @@ Graph-based multi-view clustering methods aim to explore the partition patterns 
 
 ---
 [[paper]](https://doi.org/10.3390/math11132940)
-[[bibtex]](https://lttgenius.github.io/puxinyu.github.io/files/mathematics-v11-i13_20231207.bib)
+[[bibtex]](https://xinyu-pu.github.io/files/mathematics-v11-i13_20231207.bib)

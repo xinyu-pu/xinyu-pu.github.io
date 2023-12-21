@@ -10,14 +10,15 @@ redirect_from:
 
 My name is Xinyu Pu (蒲鑫宇).
 
-I am a senior majoring in Information Security with Collage of Electronic and Information Engineering, Southwest University (China). 
+I am a senior majoring in Information Security at the College of Electronic and Information Engineering, Southwest University (China). 
 I am extremely fortunate to be advised by [Hangjun Che](https://www.researchgate.net/profile/Che-Hangjun). Here is my [Resume](). 
 
 Research Interests
 ======
-My current research focues on **Machine Learning** and **Data Mining**. 
-My interests are on **Multiview Clustering** and **Graph Learning**, especially explorations on imcomplete multiview data. 
+My current research focuses on **Machine** Learning** and **Data Mining**. 
+My interests are in **Multiview Clustering**** and **Graph Learning**, especially explorations on incomplete multiview data. 
 In a word, I have a passion for Artificial Intelligence and wish to propose meaningful works. 
 
 News and Updates
 ======
+2023.10.31: 1 paper ([Robust Multiview Clustering](10.1109/TCSS.2023.3331366)) accepted in **IEEE Transactions on Computational Social Systems**
