@@ -21,4 +21,4 @@ In a word, I have a passion for Artificial Intelligence and wish to propose mean
 
 News and Updates
 ======
-2023.10.31: 1 paper ([Robust Multiview Clustering](10.1109/TCSS.2023.3331366)) accepted in **IEEE Transactions on Computational Social Systems**
+2023.10.31: 1 paper ([Robust Multiview Clustering]([10.1109/TCSS.2023.3331366](https://doi.org/10.1109/TCSS.2023.3331366))) accepted in **IEEE Transactions on Computational Social Systems**
