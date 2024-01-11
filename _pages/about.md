@@ -18,6 +18,8 @@ Research Interests
 My current research focuses on **Machine Learning** and **Data Mining**. 
 My interests are in **Multiview Clustering** and **Graph Learning**, especially explorations on incomplete multiview data. 
 In a word, I have a passion for Artificial Intelligence and wish to propose meaningful works. 
+For any problem concerning my work, please feel free to contact me. 
+
 
 News and Updates
 ======
