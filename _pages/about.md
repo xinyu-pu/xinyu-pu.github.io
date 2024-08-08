@@ -17,6 +17,7 @@ I am extremely grateful to [Hangjun Che](https://www.researchgate.net/profile/Ch
 My current research focuses on **Generative Model**, e.g. image editing. 
 My previous research interests is **Unsupervised learning**, e.g. Multi-view learning and clustering. 
 I have a passion for Artificial Intelligence and wish to propose meaningful works. 
+
 For any problem concerning my work, please feel free to contact me ([Xinyu Pu, SWU](mailto:xndsb330@email.swu.edu.cn), [Xinyu Pu](mailto:pushyu404@163.com)). 
 
 
