@@ -14,6 +14,8 @@ author_profile: true
 *   **\[ACMMM 2024\] [Enhanced Tensorial Self-representation Subspace Learning for Incomplete Multi-view Clustering](https://openreview.net/forum?id=yhKR1rIpWE)**  
     Hangjun Che, **<font color="black">Xinyu Pu*</font>**, Deqiang Ouyang, Beibei Li.  
     In *Proceedings of the 32nd ACM International Conference on Multimedia* (ACMMM), 2024.  
+
+    
 ## Journal Publications  
 *   **\[TCSS\] [Robust Weighted Low-Rank Tensor Approximation for Multiview Clustering With Mixed Noise](https://ieeexplore.ieee.org/document/10367779/)**  
     **<font color="black">Xinyu Pu</font>**, Hangjun Che, Baicheng Pan, Man-Fai Leung, and Shiping Wen.  
