@@ -21,6 +21,6 @@ author_profile: true
     **<font color="black">Xinyu Pu</font>**, Hangjun Che, Baicheng Pan, Man-Fai Leung, and Shiping Wen.  
     Published in *IEEE Transactions on Computational Social Systems*, 2023.  
     ([Code]( https://github.com/xinyu-pu/TCSS2023-RWLTA-code-improved.git ))
-*   **\[Mathematics\] [Robust Low-Rank Graph Multi-View Clustering via Cauchy Norm Minimization](https://www.mdpi.com/2227-7390/11/13/2940)**  
+<!-- *   **\[Mathematics\] [Robust Low-Rank Graph Multi-View Clustering via Cauchy Norm Minimization](https://www.mdpi.com/2227-7390/11/13/2940)**  
     **<font color="black">Xinyu Pu</font>**, Hangjun Che, Baicheng Pan.  
-    Published in *Mathematics*, 2023  
+    Published in *Mathematics*, 2023   -->

@@ -14,11 +14,12 @@ I have just graduated from [CEIE](http://ceie.swu.edu.cn/), [Southwest Universit
 I am extremely grateful to [Hangjun Che](https://www.researchgate.net/profile/Che-Hangjun) who introduced me to multi-view learning. 
 
 
+Currently, I am pursuing Master’s degree at **Southeast University** under the supervision of [Jie Gui](https://guijiejie.github.io/index.html) and [Hongsong Wang](https://cse.seu.edu.cn/2022/0908/c23024a419407/page.htm). 
 My current research focuses on **Generative Model**, e.g. image editing. 
-My previous research interests is **Unsupervised Learning**, e.g. multi-view learning and clustering. 
+My previous research interest is **Unsupervised Learning**, e.g. multi-view learning and clustering. 
 I have a passion for Artificial Intelligence and wish to propose meaningful works. 
 
-For any problem concerning my work, please feel free to contact me ([Xinyu Pu, SWU](mailto:xndsb330@email.swu.edu.cn), [Xinyu Pu](mailto:pushyu404@163.com)). 
+For any problem concerning my work, please feel free to contact me ([Xinyu Pu-swu](mailto:xndsb330@email.swu.edu.cn), [Xinyu Pu-seu](mailto:xinyupu@seu.edu.cn)). 
 
 
 News
