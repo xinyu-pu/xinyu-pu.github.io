@@ -15,9 +15,9 @@ I am very grateful to [Hangjun Che](https://www.researchgate.net/profile/Che-Han
 
 
 Currently, I am pursuing a Master’s degree at **Southeast University** under the supervision of [Jie Gui](https://guijiejie.github.io/index.html) and [Hongsong Wang](https://cse.seu.edu.cn/2022/0908/c23024a419407/page.htm). 
-My current research focuses on **Generative Model**, e.g. image editing. 
+My current research focuses on **Generative Model**, e.g. image editing and generation. 
 My previous research interest is **Unsupervised Learning**, e.g. multi-view learning and clustering. 
-I have a passion for Artificial Intelligence and wish to propose meaningful works. 
+I am passionate about Artificial Intelligence and wish to propose meaningful works. 
 
 For any problem concerning my work, please feel free to contact me ([Xinyu Pu-swu](mailto:xndsb330@email.swu.edu.cn), [Xinyu Pu-seu](mailto:xinyupu@seu.edu.cn)). 
 
