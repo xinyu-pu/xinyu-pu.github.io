@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Xinyu Pu / Home Page"
 title_separator          : "-"
-name                     : &name "Xinyu Pu"
+name                     : &name "Xinyu Pu (蒲鑫宇)"
 description              : &description "personal description"
 url                      : https://xinyu-pu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -80,13 +80,13 @@ analytics:
 
 # Site Author
 author:
-  name             : "Xinyu Pu"
+  name             : "Xinyu Pu (蒲鑫宇)"
   avatar           : "myPhoto.jpg"
   bio              : #"Your biography for the left-hand sidebar"
   location         : "China"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : #"http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://scholar.google.com/citations?user=PVe5xFUAAAAJ&hl=en"
   email            :
   researchgate     : "https://www.researchgate.net/profile/Xinyu-Pu-3"
   uri              :
@@ -115,7 +115,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-  email            : pushyu404@163.com
+  email            : xinyupu@seu.edu.cn
 
 
 # Reading Files

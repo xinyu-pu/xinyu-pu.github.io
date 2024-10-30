@@ -8,16 +8,12 @@ redirect_from:
   - /about.html
 ---
 
-My name is Xinyu Pu (蒲鑫宇).
+Currently, I am pursuing a Master’s degree at **Southeast University** supervised by [Jie Gui](https://guijiejie.github.io/index.html) and [Hongsong Wang](https://cse.seu.edu.cn/2022/0908/c23024a419407/page.htm). 
+Prior to SEU, I graduated from [Southwest University](www.swu.edu.cn) in June 2024 with a Bachelor. 
+I am very grateful to [Hangjun Che](https://www.researchgate.net/profile/Che-Hangjun) who introduced me to machine learning.  
 
-I have graduated from [CEIE](http://ceie.swu.edu.cn/), [Southwest University](www.swu.edu.cn) (China), earning a Bachelor of Information Security. 
-I am very grateful to [Hangjun Che](https://www.researchgate.net/profile/Che-Hangjun) who introduced me to multi-view learning. 
-
-
-Currently, I am pursuing a Master’s degree at **Southeast University** under the supervision of [Jie Gui](https://guijiejie.github.io/index.html) and [Hongsong Wang](https://cse.seu.edu.cn/2022/0908/c23024a419407/page.htm). 
 My current research focuses on **Generative Model**, e.g. image editing and generation. 
-My previous research interest is **Unsupervised Learning**, e.g. multi-view learning and clustering. 
-I am passionate about Artificial Intelligence and wish to propose meaningful works. 
+My previous research interests lie in **Unsupervised Learning**, e.g. multi-view learning and clustering. 
 
 For any problem concerning my work, please feel free to contact me ([Xinyu Pu-swu](mailto:xndsb330@email.swu.edu.cn), [Xinyu Pu-seu](mailto:xinyupu@seu.edu.cn)). 
 
