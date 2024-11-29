@@ -18,10 +18,10 @@ author_profile: true
     
 ## Journal Publications  
 *   **\[NN\] [Two-step graph propagation for incomplete multi-view clustering](https://doi.org/10.1016/j.neunet.2024.106944)**   
-    Xiao Zhang\*, **<font color="black">Xinyu Pu*</font>**, Hangjun Che, Cheng Liu, Jun Qin
-    Published in *IEEE Transactions on Computational Social Systems*, 2024.  
+    Xiao Zhang\*, **<font color="black">Xinyu Pu*</font>**, Hangjun Che, Cheng Liu, Jun Qin.   
+    Published in *Neural Networks*, 2024.     
 *   **\[TCSS\] [Robust Weighted Low-Rank Tensor Approximation for Multiview Clustering With Mixed Noise](https://ieeexplore.ieee.org/document/10367779/)**  
-    **<font color="black">Xinyu Pu</font>**, Hangjun Che, Baicheng Pan, Man-Fai Leung, and Shiping Wen.  
+    **<font color="black">Xinyu Pu</font>**, Hangjun Che, Baicheng Pan, Man-Fai Leung, and Shiping Wen.    
     Published in *IEEE Transactions on Computational Social Systems*, 2023.  
     ([Code]( https://github.com/xinyu-pu/TCSS2023-RWLTA-code-improved.git ))
 <!-- *   **\[Mathematics\] [Robust Low-Rank Graph Multi-View Clustering via Cauchy Norm Minimization](https://www.mdpi.com/2227-7390/11/13/2940)**  
