@@ -21,5 +21,7 @@ For any problem concerning my work, please feel free to contact me ([Xinyu Pu-sw
 News
 ======
 2024.11.29 1 paper ([TGP](https://doi.org/10.1016/j.neunet.2024.106944)) is published in **Neural Networks**
+
 2024.7.15: 1 paper ([Enhanced Tensorial Subspace Self-representation](https://openreview.net/forum?id=yhKR1rIpWE)) is accepted in **ACMMM 2024**  
+
 2023.10.31: 1 paper ([Robust Multiview Clustering]([10.1109/TCSS.2023.3331366](https://doi.org/10.1109/TCSS.2023.3331366))) is accepted in **IEEE Transactions on Computational Social Systems**  
