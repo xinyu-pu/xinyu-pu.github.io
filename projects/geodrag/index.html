@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <!-- TODO: List all authors -->
+  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <!-- TODO: Replace with your institution or lab name -->
+  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
+  <!-- TODO: Same as paper title above -->
+  <meta property="og:title" content="PAPER_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Replace with your actual website URL -->
+  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
+  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="KEYWORD1">
+  <meta property="article:tag" content="KEYWORD2">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO: Replace with your lab/institution Twitter handle -->
+  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+  <!-- TODO: Replace with first author's Twitter handle -->
+  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
+  <!-- TODO: Same as paper title above -->
+  <meta name="twitter:title" content="PAPER_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Same as social preview image above -->
+  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="PAPER_TITLE">
+  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
+  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
+  <meta name="citation_publication_date" content="2024">
+  <meta name="citation_conference_title" content="CONFERENCE_NAME">
+  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+  
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "PAPER_TITLE",
+    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "FIRST_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "SECOND_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      }
+    ],
+    "datePublished": "2024-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CONFERENCE_OR_JOURNAL_NAME"
+    },
+    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "citation": "BIBTEX_CITATION_HERE",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "RESEARCH_AREA_1"
+      },
+      {
+        "@type": "Thing", 
+        "name": "RESEARCH_AREA_2"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "INSTITUTION_OR_LAB_NAME",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- TODO: Replace with your paper title -->
+            <h1 class="title is-1 publication-title">Dragging with Geometry: From Pixels to Geometry-Guided Image Editing</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- TODO: Replace with your paper authors and their personal links -->
+              <span class="author-block" style="display: inline-block; margin-right: 20px;">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Xinyu Pu</a><sup>1</sup></span>
+                <span class="author-block" style="display: inline-block; margin-right: 20px;">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Hongsong Wang</a><sup>1,*</sup></span>
+                  <span class="author-block" style="display: inline-block; margin-right: 20px;">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jie Gui</a><sup>1,*</sup>
+                  </span>
+                  <span class="author-block" style="display: inline-block;">
+                    <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Pan Zhou</a><sup>2</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <!-- TODO: Replace with your institution and conference/journal info -->
+                    <span class="author-block" style="color: #555; font-size: 0.95em;">
+                      <sup>1</sup>Southeast University &nbsp;&nbsp;&nbsp;&nbsp; <sup>2</sup>Singapore Management University
+                      <br>
+                      <span style="color: #2563eb; font-weight: 700; font-size: 0.98em; font-family: 'Poppins', sans-serif; letter-spacing: 0.5px;">ICLR 2026</span>
+                    </span>
+                    <!-- TODO: Remove this line if no equal contribution -->
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding authors</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+
+                      <!-- arXiv -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/abs/2509.25740" target="_blank"
+                        class="external-link button is-normal is-rounded"
+                        style="background-color: #E64C37; color: white; border: none; font-weight: 500;">
+                        <span class="icon">
+                          <i class="ai ai-arxiv"></i>
+                        </span>
+                        <span>arXiv</span>
+                      </a>
+                    </span>
+
+                    <!-- ICLR Conference Link -->
+                    <span class="link-block">
+                      <a href="https://iclr.cc/virtual/2026/poster/10009968" target="_blank"
+                      class="external-link button is-normal is-rounded"
+                      style="background-color: #059669; color: white; border: none; font-weight: 500;">
+                      <span class="icon">
+                        <i class="fas fa-award"></i>
+                      </span>
+                      <span>ICLR</span>
+                    </a>
+                  </span>
+
+
+                  <!-- Code -->
+                  <span class="link-block">
+                    <a href="https://github.com/xinyu-pu/GeoDrag" target="_blank"
+                    class="external-link button is-normal is-rounded"
+                    style="background-color: #4B5563; color: white; border: none; font-weight: 500;">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <source src="static/videos/banner_video.mp4" type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+ <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- TODO: Replace with your research result images -->
+        <img src="static/images/project_demo1.png" alt="First research result visualization" loading="lazy"/>
+        <!-- TODO: Replace with description of this result -->
+        <h2 class="subtitle has-text-centered">
+          Visual Examples
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/project_demo2.png" alt="Second research result visualization" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          Visual Examples
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <p>
+            Interactive point-based image editing serves as a controllable editor, enabling precise and flexible manipulation of image content. However, most drag-based methods operate primarily on the 2D pixel plane with limited use of 3D cues. As a result, they often produce imprecise and inconsistent edits, particularly in geometry-intensive scenarios such as rotations and perspective transformations. To address these limitations, we propose a novel geometry-guided drag-based image editing method—GeoDrag, which addresses three key challenges: 1) incorporating 3D geometric cues into pixel-level editing, 2) mitigating discontinuities caused by geometry-only guidance, and 3) resolving conflicts arising from multi-point dragging. Built upon a unified displacement field that jointly encodes 3D geometry and 2D spatial priors, GeoDrag enables coherent, high-fidelity, and structure-consistent editing in a single forward pass. In addition, a conflict-free partitioning strategy is introduced to isolate editing regions, effectively preventing interference and ensuring consistency. Extensive experiments across various editing scenarios validate the effectiveness of our method, showing superior precision, structural consistency, and reliable multi-point editability.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+
+
+
+
+<!-- Youtube video -->
+<!-- Framework -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Framework</h2>
+        <div class="content">
+          <img src="static/images/framework.png" alt="GeoDrag Framework" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy"/>
+          <p class="is-size-6" style="margin-top: 1.5em; color: #666;">
+            Overall framework of GeoDrag. In drag pipeline, the mask is split into sub-regions, each with a pair of drag points. For each sub-region, the geometry- and plane-aware displacement fields are independently calculated. Subsequently, these fused fields are aggregated without conflict. The final field enables one-step editing via latent relocation and interpolation, with reference guidance to preserve semantics.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End framework -->
+
+<!-- Core Insights -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Core Insights</h2>
+        <div class="content has-text-justified">
+          <ul style="text-align: left;">
+            <li><strong>Geometry-Guided Editing:</strong> Seamlessly integrates 3D geometric cues with 2D pixel-level editing to enable precise control over complex transformations like rotations and perspective changes.</li>
+            <li><strong>Unified Displacement Field:</strong> Proposes a unified displacement field that jointly encodes 3D geometry and 2D spatial priors, enabling coherent editing in a single forward pass without requiring multi-step refinement.</li>
+            <li><strong>Conflict-Free Multi-Point Editing:</strong> Introduces a conflict-free partitioning strategy that isolates editing regions, effectively preventing interference and ensuring consistency when handling multiple simultaneous edits.</li>
+            <li><strong>Structure-Preserving Consistency:</strong> Achieves high-fidelity, structure-consistent editing that maintains semantic coherence and prevents artifacts caused by latent manipulation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End core insights -->
+
+<!-- Experiments -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Experiments</h2>
+    
+    <!-- Main Results Subsection -->
+    <div class="content" style="margin-top: 2em;">
+      <h3 class="title is-4" style="text-align: left; border-left: 4px solid #2563eb; padding-left: 12px; color: #333;">🏆 Main Results on DragBench</h3>
+      <div style="overflow-x: auto;">
+        <table class="table is-hoverable" style="margin-top: 1.5em; width: 100%;">
+          <thead>
+            <tr style="background-color: #f5f5f5;">
+              <th>Method</th>
+              <th>MD ↓</th>
+              <th>DAI₁ ↓</th>
+              <th>DAI₁₀ ↓</th>
+              <th>DAI₂₀ ↓</th>
+              <th>IF ↑</th>
+              <th>Preparation</th>
+              <th>Time (s)</th>
+              <th>Mem (GB)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>DragDiffusion</strong></td>
+              <td>34.57</td>
+              <td>0.181</td>
+              <td>0.170</td>
+              <td>0.160</td>
+              <td>0.871</td>
+              <td>~1 min (LoRA)</td>
+              <td>22.46</td>
+              <td>18.63</td>
+            </tr>
+            <tr>
+              <td><strong>FreeDrag</strong></td>
+              <td>30.80</td>
+              <td>0.183</td>
+              <td>0.166</td>
+              <td>0.151</td>
+              <td>0.845</td>
+              <td>~1 min (LoRA)</td>
+              <td>42.90</td>
+              <td>18.90</td>
+            </tr>
+            <tr>
+              <td><strong>CLIPDrag</strong></td>
+              <td>34.62</td>
+              <td>0.195</td>
+              <td>0.174</td>
+              <td>0.158</td>
+              <td>0.891</td>
+              <td>~1 min (LoRA)</td>
+              <td>38.21</td>
+              <td>22.72</td>
+            </tr>
+            <tr>
+              <td><strong>AdaptiveDrag</strong></td>
+              <td>32.38</td>
+              <td>0.180</td>
+              <td>0.154</td>
+              <td>0.146</td>
+              <td>0.830</td>
+              <td>~1 min (LoRA)</td>
+              <td>46.30</td>
+              <td>7.71</td>
+            </tr>
+            <tr>
+              <td><strong>DragNoise</strong></td>
+              <td>33.84</td>
+              <td>0.179</td>
+              <td>0.169</td>
+              <td>0.158</td>
+              <td>0.861</td>
+              <td>~1 min (LoRA)</td>
+              <td>21.12</td>
+              <td>18.36</td>
+            </tr>
+            <tr>
+              <td><strong>FastDrag</strong></td>
+              <td>32.10</td>
+              <td>0.131</td>
+              <td>0.123</td>
+              <td>0.115</td>
+              <td>0.850</td>
+              <td>–</td>
+              <td>3.23</td>
+              <td>5.85</td>
+            </tr>
+            <tr style="background-color: #e3f2fd;">
+              <td><strong>GeoDrag (Ours)</strong></td>
+              <td><strong>29.24</strong></td>
+              <td><strong>0.128</strong></td>
+              <td><strong>0.120</strong></td>
+              <td><strong>0.111</strong></td>
+              <td><strong>0.847</strong></td>
+              <td><strong>–</strong></td>
+              <td><strong>3.95</strong></td>
+              <td><strong>5.44</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="is-size-6" style="color: #666; margin-top: 1em;">
+        Quantitative results on DragBench. Lower MD and DAI indicate higher editing precision, and higher IF reflects greater similarity between original and edited images. Time is the average editing time per point (in seconds), and Mem is the peak GPU memory in GB. GeoDrag achieves the best precision with competitive efficiency.
+      </p>
+    </div>
+
+    <!-- Qualitative Comparison Subsection -->
+    <div class="content" style="margin-top: 3em;">
+      <h3 class="title is-4" style="text-align: left; border-left: 4px solid #059669; padding-left: 12px; color: #333;">📊 Qualitative Comparisons</h3>
+      <div style="margin-top: 1.5em;">
+        <img src="static/images/qualitative_comparisons.jpg" alt="Qualitative Comparison Results" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy"/>
+        <p class="is-size-6" style="color: #666; margin-top: 1em;">
+          Qualitative comparisons with the state-of-the-art interactive point-based methods. Red points mark handles, and blue points mark targets. 
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End experiments -->
+
+<!-- Youtube video -->
+  <!-- <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+
+          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+ 
+            <source src="static/videos/carousel1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+  
+          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+     
+            <source src="static/videos/carousel2.mp4" type="video/mp4">
+          </video>
+        </div>
+
+          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+        
+            <source src="static/videos/carousel3.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@inproceedings{
+  pu2026dragging,
+  title={Dragging with Geometry: From Pixels to Geometry-Guided Image Editing},
+  author={Xinyu Pu and Hongsong Wang and Jie Gui and Pan Zhou},
+  booktitle={The Fourteenth International Conference on Learning Representations},
+  year={2026},
+  url={https://openreview.net/forum?id=MBiMt3wp8M}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
