@@ -1,12 +1,52 @@
 ---
 permalink: /
-title: <h2 style="color:#1f6feb; border-left:4px solid #1f6feb; padding-left:10px; margin-bottom:0.8em;"><i class="fas fa-user-circle"></i> About Me</h2>
+title: "<span class='about-name about-name--en'>Xinyu Pu</span> <span class='about-name-sep'>·</span> <span class='about-name about-name--zh'>蒲鑫宇</span>"
 excerpt: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ma+Shan+Zheng&display=swap');
+
+  .page__title .about-name {
+    line-height: 1;
+    color: #111;
+  }
+
+  .page__title .about-name--en {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.55rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+
+  .page__title .about-name--zh {
+    font-family: 'Ma Shan Zheng', cursive;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-left: 0.08em;
+  }
+
+  .page__title .about-name-sep {
+    color: #a8adb3;
+    font-size: 1.35rem;
+    margin: 0 0.25em;
+    vertical-align: middle;
+  }
+
+  @media (max-width: 767px) {
+    .page__title .about-name--en {
+      font-size: 2rem;
+    }
+
+    .page__title .about-name--zh {
+      font-size: 1.8rem;
+    }
+  }
+</style>
 
 <h2 style="color:#1f6feb; border-left:4px solid #1f6feb; padding-left:10px; margin-bottom:0.8em;">
   <i class="fas fa-user-circle"></i> About Me

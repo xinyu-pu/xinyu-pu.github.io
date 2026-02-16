@@ -51,3 +51,42 @@
     font-weight: 700;
   }
 }
+
+.masthead__site-title-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35em;
+}
+
+.masthead__site-title {
+  line-height: 1;
+  color: #111;
+}
+
+.masthead__site-title--en {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+
+.masthead__site-title--zh {
+  font-family: 'Ma Shan Zheng', cursive;
+  font-size: 2.05rem;
+  font-weight: 400;
+}
+
+.masthead__site-title-sep {
+  font-size: 1.3rem;
+  color: #a8adb3;
+  padding: 0 0.25em;
+}
+
+@include breakpoint($small) {
+  .masthead__site-title--en {
+    font-size: 2.65rem;
+  }
+
+  .masthead__site-title--zh {
+    font-size: 2.3rem;
+  }
+}
