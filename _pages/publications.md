@@ -12,7 +12,7 @@ author_profile: true
 (* stands for equal contribution. Listed in reverse chronological order.) 
 ## Conference Publications
 *   **\[ICLR 2026\] [Dragging with Geometry: From Pixels to Geometry-Guided Image Editing](https://arxiv.org/abs/2509.25740)**  
-    **<font color="black">Xinyu Pu*</font>**, Hongsong Wang, Jie Gui, Pan Zhou   
+    **<font color="black">Xinyu Pu</font>**, Hongsong Wang, Jie Gui, Pan Zhou   
     In *Proceedings of the Fourteenth International Conference on Learning Representations* (ICLR), 2026. 
 *   **\[ACMMM 2024\] [Enhanced Tensorial Self-representation Subspace Learning for Incomplete Multi-view Clustering](https://dl.acm.org/doi/10.1145/3664647.3681573)**  
     Hangjun Che\*, **<font color="black">Xinyu Pu*</font>**, Deqiang Ouyang, Beibei Li.   
@@ -21,7 +21,7 @@ author_profile: true
     
 ## Journal Publications  
 *   **\[IEEE TMM\] [Conquering Missing Views: Scalable Incomplete Multi-View Clustering with Anchor Graph Propagation]()**   
-    **<font color="black">Xinyu Pu*</font>**, Hangjun Che, Deqiang Ouyang, Shouxi Zhao  
+    **<font color="black">Xinyu Pu</font>**, Hangjun Che, Deqiang Ouyang, Shouxi Zhao  
     Accepted in *IEEE Transactions on Multimedia*, 2025.  
 *   **\[NN\] [Two-step graph propagation for incomplete multi-view clustering](https://doi.org/10.1016/j.neunet.2024.106944)**   
     Xiao Zhang\*, **<font color="black">Xinyu Pu*</font>**, Hangjun Che, Cheng Liu, Jun Qin  
