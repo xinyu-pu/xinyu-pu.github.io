@@ -9,51 +9,60 @@ redirect_from:
 
 {% include base_path %}
 
+<div style="margin: 0.8em 0 1.4em 0;">
+  <a href="{{ base_path }}/files/Xinyu_Pu_CV.pdf" download
+     style="display: inline-flex; align-items: center; gap: 8px; background-color: #E64C37; color: #ffffff; border: none; border-radius: 9999px; padding: 0.5em 1em; font-weight: 500; text-decoration: none;">
+    <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+    <span>Download CV (PDF)</span>
+  </a>
+</div>
+
+Research Interests
+======
+AIGC, Diffusion Models, Multimodal Learning.
+
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+**Southeast University**, Nanjing, China  
+*M.S. in Network and Information Security*, 2024 – Present  
+GPA: 84.31/100  
+Supervisors: Prof. Hongsong Wang & Prof. Jie Gui  
 
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+**Southwest University**, Chongqing, China  
+*B.Eng. in Information Security*, 2020 – 2024  
+GPA: 89.5/100 · 4.15/5.0  
+Supervisor: Prof. Hangjun Che  
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
+Selected Publications
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+**Dragging with Geometry: From Pixels to Geometry-Guided Image Editing**  
+Xinyu Pu, Hongsong Wang, Jie Gui, Pan Zhou  
+ICLR 2026 · International Conference on Learning Representations  
 
-Publications
+**Conquering Missing Views: Scalable Incomplete Multi-View Clustering with Anchor Graph Propagation**  
+Xinyu Pu, Hangjun Che, Deqiang Ouyang, Shouxi Zhao  
+IEEE Transactions on Multimedia (TMM), 2026 (Accepted)  
+
+**Enhanced Tensorial Self-representation Subspace Learning for Incomplete Multi-view Clustering**  
+Hangjun Che*, Xinyu Pu*, Deqiang Ouyang, Beibei Li  
+ACM MM 2024 · ACM International Conference on Multimedia  
+
+**Two-step Graph Propagation for Incomplete Multi-view Clustering**  
+Xiao Zhang*, Xinyu Pu*, Hangjun Che, Cheng Liu, Jun Qin  
+Neural Networks, 2025  
+
+**Robust Weighted Low-Rank Tensor Approximation for Multiview Clustering with Mixed Noise**  
+Xinyu Pu, Hangjun Che, Baicheng Pan, Man-Fai Leung, Shiping Wen  
+IEEE Transactions on Computational Social Systems (TCSS), 2023  
+
+Honors and Awards
 ======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+Second-Class Academic Scholarship, Southeast University, 2025  
+Outstanding Graduate, Southwest University, 2024  
+
+Professional Services
 ======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+Journal Reviewer:  
+IEEE Transactions on Knowledge and Data Engineering (TKDE)  
+Neurocomputing  
+Artificial Intelligence Review  
