@@ -1,6 +1,8 @@
 ---
 permalink: /
-title: ""
+title: <h2 style="color:#1f6feb; border-left:4px solid #1f6feb; padding-left:10px; margin-bottom:0.8em;">
+  <i class="fas fa-user-circle"></i> About Me
+</h2>
 excerpt: "About Me"
 author_profile: true
 redirect_from: 
