@@ -19,8 +19,8 @@ For any inquiries concerning my work, please feel free to contact me. I would be
 
 News
 ======
-2026.1.26 1 paper ([GeoDrag](https://arxiv.org/abs/2509.25740)) is accepted to **ICLR 2026**
-2025.12.31 1 paper ([SSR]()) is accepted to **IEEE Transactions on Multimedia**
+2026.1.26 1 paper ([GeoDrag](https://arxiv.org/abs/2509.25740)) is accepted to **ICLR 2026**      
+2025.12.31 1 paper ([SSR]()) is accepted to **IEEE Transactions on Multimedia**     
 2024.11.29 1 paper ([TGP](https://doi.org/10.1016/j.neunet.2024.106944)) is published in **Neural Networks**   
 2024.7.15: 1 paper ([Enhanced Tensorial Subspace Self-representation](https://openreview.net/forum?id=yhKR1rIpWE)) is accepted to **ACMMM 2024**    
 2023.10.31: 1 paper ([Robust Multiview Clustering]([10.1109/TCSS.2023.3331366](https://doi.org/10.1109/TCSS.2023.3331366))) is accepted to **IEEE Transactions on Computational Social Systems**    
