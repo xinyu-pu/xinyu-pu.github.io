@@ -8,8 +8,6 @@
 # Site Settings
 locale                   : "en-US"
 title                    : "Xinyu Pu / Home Page"
-masthead_title_en        : "Xinyu Pu"
-masthead_title_zh        : "蒲鑫宇"
 title_separator          : "-"
 name                     : &name "Xinyu Pu (蒲鑫宇)"
 description              : &description "personal description"
