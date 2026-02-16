@@ -144,8 +144,6 @@ redirect_from:
 
   <h2 class="cv-section-title">Professional Services</h2>
   <ul class="cv-list">
-    <li>Journal Reviewer: IEEE Transactions on Knowledge and Data Engineering (TKDE)</li>
-    <li>Journal Reviewer: Neurocomputing</li>
-    <li>Journal Reviewer: Artificial Intelligence Review</li>
+    <li>Journal Reviewer: IEEE Transactions on Knowledge and Data Engineering (TKDE); Neurocomputing; Artificial Intelligence Review</li>
   </ul>
 </div>
