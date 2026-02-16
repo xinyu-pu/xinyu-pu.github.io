@@ -8,6 +8,10 @@ redirect_from:
   - /about.html
 ---
 
+<h2 style="color:#1f6feb; border-left:4px solid #1f6feb; padding-left:10px; margin-bottom:0.8em;">
+  <i class="fas fa-user-circle"></i> About Me
+</h2>
+
 Currently, I am pursuing a Master’s degree at **Southeast University** supervised by [Jie Gui](https://guijiejie.github.io/index.html) and [Hongsong Wang](https://cse.seu.edu.cn/2022/0908/c23024a419407/page.htm). 
 Prior to SEU, I graduated from [Southwest University](www.swu.edu.cn) in June 2024 with a Bachelor. 
 I am very grateful to [Hangjun Che](https://www.researchgate.net/profile/Che-Hangjun) who introduced me to machine learning.  
@@ -17,8 +21,10 @@ My current research centers on **Generative Models**, with a focus on generation
 For any inquiries concerning my work, please feel free to contact me. I would be happy to hear from you and discuss potential opportunities for collaboration or exchange of ideas. 
 
 
-News
-======
+<h2 style="color:#0f766e; border-left:4px solid #0f766e; padding-left:10px; margin-top:1.4em; margin-bottom:0.8em;">
+  <i class="fas fa-newspaper"></i> News
+</h2>
+
 2026.1.26 1 paper ([GeoDrag](https://arxiv.org/abs/2509.25740)) is accepted to **ICLR 2026**      
 2025.12.31 1 paper ([SSR]()) is accepted to **IEEE Transactions on Multimedia**     
 2024.11.29 1 paper ([TGP](https://doi.org/10.1016/j.neunet.2024.106944)) is published in **Neural Networks**   

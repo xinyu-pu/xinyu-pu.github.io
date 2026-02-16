@@ -9,8 +9,15 @@ author_profile: true
   Check<u><a href="{{author.googlescholar}}">my Google Scholar for more information</a>.</u>
 {% endif %}
 
-(* stands for equal contribution. Listed in reverse chronological order.) 
-## Conference Publications
+<p style="margin:0.4em 0 1em 0; padding:0.6em 0.8em; border-left:3px solid #f59e0b; background:rgba(245,158,11,0.08); border-radius:4px;">
+    <i class="fas fa-info-circle" style="color:#f59e0b;"></i>
+    <em>(* stands for equal contribution. Listed in reverse chronological order.)</em>
+</p>
+
+<h2 style="color:#1f6feb; border-left:4px solid #1f6feb; padding-left:10px; margin-top:0.8em; margin-bottom:0.8em;">
+    <i class="fas fa-chalkboard"></i> Conference Publications
+</h2>
+
 *   **\[ICLR 2026\] [Dragging with Geometry: From Pixels to Geometry-Guided Image Editing](https://arxiv.org/abs/2509.25740)**  
     **<font color="black">Xinyu Pu</font>**, Hongsong Wang, Jie Gui, Pan Zhou   
     In *Proceedings of the Fourteenth International Conference on Learning Representations* (ICLR), 2026. 
@@ -19,7 +26,10 @@ author_profile: true
     In *Proceedings of the 32nd ACM International Conference on Multimedia* (ACMMM), 2024.  
 
     
-## Journal Publications  
+<h2 style="color:#0f766e; border-left:4px solid #0f766e; padding-left:10px; margin-top:1.1em; margin-bottom:0.8em;">
+    <i class="fas fa-book-open"></i> Journal Publications
+</h2>
+
 *   **\[IEEE TMM\] [Conquering Missing Views: Scalable Incomplete Multi-View Clustering with Anchor Graph Propagation]()**   
     **<font color="black">Xinyu Pu</font>**, Hangjun Che, Deqiang Ouyang, Shouxi Zhao  
     Accepted in *IEEE Transactions on Multimedia*, 2025.  
