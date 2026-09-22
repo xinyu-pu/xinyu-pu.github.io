@@ -84,3 +84,8 @@ html[data-theme=dark] .venue-rank--ccf{border-color:#506b7e;background:#26323a;c
 html[data-theme=dark] .venue-rank--core{border-color:#6b6179;background:#302d37;color:#c8b9da}
 html[data-theme=dark] .venue-rank--sci{border-color:#536e63;background:#29342f;color:#afd0bf}
 @media(max-width:560px){.venue-ranks{gap:3px}.venue-rank{min-height:17px;padding:1px 4px;font-size:9px}}
+
+/* Quiet inline contact reveal for the profile introduction. */
+.contact-reveal{display:inline;padding:0;border:0;background:transparent;color:var(--link);font-family:inherit;font-size:inherit;line-height:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
+.contact-reveal:hover{color:var(--text)}
+.contact-value{display:inline-block;margin-left:5px;padding:0 5px;border:1px solid var(--line);border-radius:3px;background:var(--hover);color:var(--text);font-family:var(--ui);font-size:.88em;font-variant-numeric:tabular-nums;letter-spacing:.02em}
