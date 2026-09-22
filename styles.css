@@ -89,3 +89,4 @@ html[data-theme=dark] .venue-rank--sci{border-color:#536e63;background:#29342f;c
 .contact-reveal{display:inline;padding:0;border:0;background:transparent;color:var(--link);font-family:inherit;font-size:inherit;line-height:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
 .contact-reveal:hover{color:var(--text)}
 .contact-value{display:inline-block;margin-left:5px;padding:0 5px;border:1px solid var(--line);border-radius:3px;background:var(--hover);color:var(--text);font-family:var(--ui);font-size:.88em;font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.contact-value[hidden]{display:none}

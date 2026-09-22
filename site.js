@@ -44,7 +44,7 @@ contactRevealButtons.forEach(button => button.addEventListener('click', () => {
   const willReveal = button.getAttribute('aria-expanded') !== 'true';
   button.setAttribute('aria-expanded', String(willReveal));
   button.textContent = willReveal ? button.dataset.hideLabel : button.dataset.showLabel;
-  if (willReveal) value.textContent = ['F330', '470351'].join('');
+  value.textContent = willReveal ? ['F330', '470351'].join('') : '';
   value.hidden = !willReveal;
 }));
 filters.forEach(button => button.addEventListener('click', () => {
