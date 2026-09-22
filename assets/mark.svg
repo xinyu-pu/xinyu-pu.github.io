@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Open book</title>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="#24679a"/>
+  <path d="M11.5 18c7.8-1.4 14.6 1.1 20.5 7.2V48c-5.8-5.1-12.6-7-20.5-5.2V18Zm41 0c-7.8-1.4-14.6 1.1-20.5 7.2V48c5.8-5.1 12.6-7 20.5-5.2V18Z" fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

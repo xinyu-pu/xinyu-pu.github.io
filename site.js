@@ -1,0 +1,71 @@
+'use strict';
+const root = document.documentElement;
+const languageButtons = [...document.querySelectorAll('[data-set-language]')];
+const filters = [...document.querySelectorAll('[data-filter]')];
+const papers = [...document.querySelectorAll('.paper')];
+const themeButton = document.getElementById('theme-toggle');
+const paperFigures = [...document.querySelectorAll('.paper-figure')];
+const lightbox = document.getElementById('image-lightbox');
+const lightboxImage = document.getElementById('lightbox-image');
+const lightboxCaption = document.getElementById('lightbox-caption');
+const lightboxClose = lightbox?.querySelector('.lightbox-close');
+const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
+let explicitTheme = false;
+try { explicitTheme = ['light', 'dark'].includes(localStorage.getItem('xinyu-theme')); } catch (_) {}
+function announceCount() {
+  const count = papers.filter(paper => !paper.hidden).length;
+  document.getElementById('filter-status').textContent = root.dataset.language === 'zh' ? `显示 ${count} 篇论文` : `Showing ${count} publications`;
+}
+function updateThemeControl() {
+  const dark = root.dataset.theme === 'dark';
+  const label = root.dataset.language === 'zh' ? (dark ? '切换为浅色主题' : '切换为深色主题') : (dark ? 'Switch to light theme' : 'Switch to dark theme');
+  themeButton.setAttribute('aria-pressed', String(dark));
+  themeButton.setAttribute('aria-label', label);
+  themeButton.title = label;
+  document.querySelector('meta[name="theme-color"]').content = dark ? '#202124' : '#ffffff';
+}
+function setLanguage(language) {
+  const lang = language === 'zh' ? 'zh' : 'en';
+  root.dataset.language = lang;
+  root.lang = lang === 'zh' ? 'zh-CN' : 'en';
+  languageButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.setLanguage === lang)));
+  document.title = lang === 'zh' ? '蒲鑫宇 · Xinyu Pu — 生成模型与视觉计算' : 'Xinyu Pu · 蒲鑫宇 — Generative Models & Visual Computing';
+  if (lightboxClose) lightboxClose.setAttribute('aria-label', lang === 'zh' ? '关闭图片预览' : 'Close image preview');
+  try { localStorage.setItem('xinyu-language', lang); } catch (_) {}
+  announceCount();
+  updateThemeControl();
+}
+languageButtons.forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.setLanguage)));
+setLanguage(root.dataset.language);
+filters.forEach(button => button.addEventListener('click', () => {
+  filters.forEach(filter => filter.setAttribute('aria-pressed', String(filter === button)));
+  papers.forEach(paper => { paper.hidden = button.dataset.filter !== 'all' && paper.dataset.category !== button.dataset.filter; });
+  announceCount();
+}));
+paperFigures.forEach(link => link.addEventListener('click', event => {
+  if (!lightbox || typeof lightbox.showModal !== 'function') return;
+  event.preventDefault();
+  const thumbnail = link.querySelector('img');
+  lightboxImage.src = link.href;
+  lightboxImage.alt = thumbnail?.alt || '';
+  lightboxCaption.textContent = thumbnail?.alt || '';
+  lightbox.showModal();
+}));
+lightboxClose?.addEventListener('click', () => lightbox.close());
+lightbox?.addEventListener('click', event => {
+  if (event.target === lightbox) lightbox.close();
+});
+lightbox?.addEventListener('close', () => {
+  lightboxImage.removeAttribute('src');
+});
+themeButton.addEventListener('click', () => {
+  const theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+  root.dataset.theme = theme;
+  explicitTheme = true;
+  try { localStorage.setItem('xinyu-theme', theme); } catch (_) {}
+  updateThemeControl();
+});
+systemTheme.addEventListener('change', event => {
+  if (!explicitTheme) { root.dataset.theme = event.matches ? 'dark' : 'light'; updateThemeControl(); }
+});
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
