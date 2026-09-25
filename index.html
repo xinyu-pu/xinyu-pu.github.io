@@ -111,6 +111,11 @@
 </div>
 <div class="news-list" role="region" aria-label="News: scroll for earlier updates / 动态：滚动查看更多" tabindex="0">
 <div class="news-item">
+<time datetime="2026-09-25">2026.09</time>
+<p lang="en">🎉 Our paper <strong>MoRe-Drag</strong> is accepted to <strong>NeurIPS 2026</strong>!</p>
+<p lang="zh-CN">🎉 我们的论文 <strong>MoRe-Drag</strong> 被 <strong>NeurIPS 2026</strong> 录用！</p>
+</div>
+<div class="news-item">
 <time datetime="2026-05-01">2026.05</time>
 <p lang="en">Joined the <a href="https://www.lv-lab.org/SMU/index.html">LV Lab</a> at SMU as a visiting student.</p>
 <p lang="zh-CN">加入新加坡管理大学的 <a href="https://www.lv-lab.org/SMU/index.html">LV Lab</a>，担任访问学生。</p>
@@ -164,11 +169,11 @@
 <div class="filters" role="group" aria-label="Publication filter / 论文筛选">
 <button data-filter="all" aria-pressed="true">
 <span lang="en">All work</span>
-<span lang="zh-CN">全部论文</span> <span class="filter-count">05</span>
+<span lang="zh-CN">全部论文</span> <span class="filter-count">06</span>
 </button>
 <button data-filter="generation" aria-pressed="false">
 <span lang="en">Image Generation &amp; Editing</span>
-<span lang="zh-CN">图像生成与编辑</span> <span class="filter-count">01</span>
+<span lang="zh-CN">图像生成与编辑</span> <span class="filter-count">02</span>
 </button>
 <button data-filter="clustering" aria-pressed="false">
 <span lang="en">Multi-view learning</span>
@@ -183,6 +188,25 @@
 <p id="filter-status" class="sr-only" aria-live="polite">
 </p>
 <div class="publications">
+<article class="paper" data-category="generation">
+<a class="paper-figure" href="assets/papers/moredrag.png" target="_blank" rel="noopener" aria-label="MoRe-Drag framework overview — open full-size image">
+<img src="assets/papers/moredrag-thumb.webp" alt="MoRe-Drag framework overview" width="480" height="300" loading="lazy">
+</a>
+<div class="paper-content">
+<h3>Drag as Evidence: Motion-Grounded Latent Recomposition for Drag-Based Editing</h3>
+<p class="authors"><strong>Xinyu Pu</strong>, Hongsong Wang, Jie Gui, Pan Zhou</p>
+<p class="publication-venue"><strong>NeurIPS 2026</strong><span class="venue-divider" aria-hidden="true">|</span><em>Advances in Neural Information Processing Systems</em><span class="venue-ranks"><span class="venue-rank venue-rank--ccf" title="China Computer Federation: Class A">CCF-A</span><span class="venue-rank venue-rank--core" title="ICORE 2026: A-star">CORE-A*</span></span></p>
+<div class="paper-actions">
+<details class="paper-abstract">
+<summary class="paper-action">
+<svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v5h5M9 12h7M9 16h7"/></svg>
+<span lang="en">Abs</span><span lang="zh-CN">摘要</span>
+</summary>
+<p class="abstract-copy">Modern image editors excel at semantic manipulation and visual synthesis, yet remain limited in precise spatial control, motivating the development of drag-based editing. However, existing drag-based methods often struggle to balance drag accuracy with natural, plausible, and intent-aligned generation. We propose MoRe-Drag, a motion-grounded drag-based editing method. Our key insight is to treat pixel-space warping as coarse motion evidence, and to inject this evidence into the generative sampling trajectory. Specifically, MoRe-Drag performs region-aware latent recomposition over refinement, inpainting, and anchor regions, coupled with stage-adaptive conditioning that progressively shifts from motion-grounded structure formation to semantic refinement. We further support an instruction-free interface by adapting the MLLM-based text encoder for drag-aware instruction inference. Experiments on DragBench-SR and DragBench-DR show that MoRe-Drag substantially improves drag precision over strong base editors and achieves superior drag accuracy among SOTA drag-based methods, while delivering strong semantic consistency and visually realistic results. Code and dataset will be publicly released.</p>
+</details>
+</div>
+</div>
+</article>
 <article class="paper" data-category="generation">
 <a class="paper-figure" href="assets/papers/geodrag-poster.png" target="_blank" rel="noopener" aria-label="GeoDrag — ICLR 2026 poster — open full-size image">
 <img src="assets/papers/geodrag-poster-thumb.webp" alt="GeoDrag — ICLR 2026 poster" width="480" height="300" loading="lazy">
