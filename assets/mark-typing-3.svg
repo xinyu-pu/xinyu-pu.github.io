@@ -2,10 +2,10 @@
   <title id="title">Person typing code on a laptop</title>
   <rect x="3" y="3" width="58" height="58" rx="14" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
   <g fill="none" stroke="#111111" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="21" cy="17" r="7"/>
-    <path d="M15 15c1-5 5-7 10-4M21 24v4M15 31c-4 4-5 10-4 15"/>
-    <path d="M17 31c4 2 7 7 13 9M17 35c6 4 11 6 18 7"/>
+    <circle cx="22" cy="17" r="7"/>
+    <path d="M16 15c1-5 5-7 10-4M22 24v4M16 31c-4 4-5 10-4 15"/>
+    <path d="M18 31c6 3 10 6 17 7M18 36c5 4 8 7 14 7"/>
     <path d="M30 29h23l-2 18H32z" fill="#ffffff"/>
-    <path d="m38 36-3 3 3 3M45 35l3 4-3 4M28 49h28l3 4H25z"/>
+    <path d="M35 39h4M45 35l3 4-3 4M28 49h28l3 4H25z"/>
   </g>
 </svg>
