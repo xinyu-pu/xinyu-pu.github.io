@@ -1,13 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
-  <title id="title">Person seated at a laptop and typing</title>
-  <rect x="3" y="3" width="58" height="58" rx="14" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
-  <g fill="none" stroke="#111111" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="18" cy="17" r="7"/>
-    <path d="M12 15c1-5 5-7 10-4M24 16l3 2-3 2M14 25c-4 5-5 13-4 22M14 26c5 0 9 4 11 9"/>
-    <path d="M19 29c3 5 5 10 12 14M17 33c4 5 8 8 15 10"/>
-    <path d="M34 26l20 4-3 17-19-4z" fill="#ffffff"/>
-    <path d="M39 36h3m5-2 2 2-2 2" stroke-width="2.4"/>
-    <path d="M29 45h23l4 5H26z" fill="#ffffff"/>
-    <path d="M32 48h6M41 47h6" stroke-width="2.1"/>
+  <title id="title">Front-facing programmer with a code window</title>
+  <rect width="64" height="64" fill="#ffffff"/>
+  <path d="M7 59c-3 0-5-3-4-6l4-18c1-6 5-10 11-13l9-4h10l9 4c6 3 10 7 11 13l4 18c1 3-1 6-5 6z" fill="#1b3158"/>
+  <path d="M23 12h18v11c0 7-4 11-9 11s-9-4-9-11z" fill="#ffffff"/>
+  <path d="M21 8c0-4 2-6 6-6h13c3 0 5 2 5 5 3 0 5 2 5 5v8c0 3-2 5-5 5h-2v-8c-5 3-12 4-22 2z" fill="#1b3158"/>
+  <path d="m27 27 5 3 5-3-3 8h-4z" fill="#ffffff"/>
+  <rect x="18" y="36" width="28" height="17" rx="1" fill="#ffffff"/>
+  <g fill="none" stroke="#1b3158" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 45h4M37 42l4 3-4 3M34 40l-4 10"/>
   </g>
 </svg>
