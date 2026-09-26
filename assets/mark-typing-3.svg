@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
-  <title id="title">Person typing code on a laptop</title>
+  <title id="title">Person seated behind a laptop and typing</title>
   <rect x="3" y="3" width="58" height="58" rx="14" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
   <g fill="none" stroke="#111111" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="22" cy="17" r="7"/>
-    <path d="M16 15c1-5 5-7 10-4M22 24v4M16 31c-4 4-5 10-4 15"/>
-    <path d="M18 31c6 3 10 6 17 7M18 36c5 4 8 7 14 7"/>
-    <path d="M30 29h23l-2 18H32z" fill="#ffffff"/>
-    <path d="M35 39h4M45 35l3 4-3 4M28 49h28l3 4H25z"/>
+    <circle cx="32" cy="15" r="7"/>
+    <path d="M26 13c1-5 6-7 11-4M19 34c1-8 6-12 13-12s12 4 13 12"/>
+    <path d="M21 31c-5 3-7 9-3 15M43 31c5 3 7 8 3 14"/>
+    <path d="M16 28h32l-2 17H18z" fill="#ffffff"/>
+    <path d="M25 37h4m7-3 3 3-3 3M14 46h36l4 6H10z" fill="#ffffff"/>
+    <path d="M18 46c2-3 6-3 8 0M38 45c2-4 6-4 8 0"/>
+    <path d="M28 49h7" stroke-width="2.2"/>
   </g>
 </svg>
