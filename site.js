@@ -14,9 +14,9 @@ const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const favicon = document.getElementById('site-favicon');
 const faviconFrames = [
-  'assets/mark.svg?v=5',
-  'assets/mark-typing-2.svg?v=2',
-  'assets/mark-typing-3.svg?v=2'
+  'assets/mark.svg?v=6',
+  'assets/mark-typing-2.svg?v=3',
+  'assets/mark-typing-3.svg?v=3'
 ];
 let faviconTimer;
 let explicitTheme = false;

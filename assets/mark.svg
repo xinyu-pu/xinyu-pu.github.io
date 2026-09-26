@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
-  <title id="title">Person seated behind a laptop and typing</title>
+  <title id="title">Person seated at a laptop and typing</title>
   <rect x="3" y="3" width="58" height="58" rx="14" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
   <g fill="none" stroke="#111111" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="32" cy="15" r="7"/>
-    <path d="M26 13c1-5 6-7 11-4M19 34c1-8 6-12 13-12s12 4 13 12"/>
-    <path d="M21 31c-5 3-7 9-3 15M43 31c5 3 7 9 3 15"/>
-    <path d="M16 28h32l-2 17H18z" fill="#ffffff"/>
-    <path d="m28 34-3 3 3 3M36 34l3 3-3 3M14 46h36l4 6H10z" fill="#ffffff"/>
-    <path d="M18 46c2-3 6-3 8 0M38 46c2-3 6-3 8 0"/>
-    <path d="M28 49h8" stroke-width="2.2"/>
+    <circle cx="18" cy="17" r="7"/>
+    <path d="M12 15c1-5 5-7 10-4M24 16l3 2-3 2M14 25c-4 5-5 13-4 22M14 26c5 0 9 4 11 9"/>
+    <path d="M19 29c3 5 5 10 12 13M17 33c4 5 7 9 14 11"/>
+    <path d="M34 26l20 4-3 17-19-4z" fill="#ffffff"/>
+    <path d="m41 34-2 2 2 2M47 36h3" stroke-width="2.4"/>
+    <path d="M29 45h23l4 5H26z" fill="#ffffff"/>
+    <path d="M32 47h6M41 48h6" stroke-width="2.1"/>
   </g>
 </svg>
