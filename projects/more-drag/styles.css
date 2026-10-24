@@ -1,0 +1,30 @@
+/* Small refinements to the existing GeoDrag project-page styles. */
+body{color:#363636}
+.hero,.section{animation:none}
+.publication-header .hero-body{padding:3.2rem 1.5rem 1.7rem}
+.publication-title{font-size:2.7rem!important;font-weight:700!important;line-height:1.2!important;margin-bottom:1.6rem!important;letter-spacing:-.7px}
+.publication-authors{margin-bottom:.75rem}
+.author-block{margin:0 .6rem .3rem}
+.publication-authors a::after{display:none}
+.affiliations{font-size:1rem;color:#555;line-height:1.8}
+.affiliations span{display:inline-block;margin-inline:.4rem}
+.conference{color:#2563eb;font-weight:700;font-size:1.2rem;margin:.35rem 0 .15rem}
+.eql-cntrb{font-style:normal;color:#777;font-size:.8rem}
+.publication-links{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:1.3rem}
+.publication-links .button{height:40px;border-radius:999px!important;font-size:.9rem;font-weight:500!important;padding-inline:1.1rem;box-shadow:none;transition:none!important}
+.paper-button{background:#363636;color:white}.arxiv-button{background:#e64c37;color:white}.code-button{background:#f1f1f1;color:#888;cursor:default;user-select:none}
+.publication-links a:hover{color:white;filter:brightness(.92)}
+.icon svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.arxiv-mark{font-family:Georgia,serif;font-size:1.2rem;margin-right:8px}
+.teaser-section{padding:1rem 1.5rem 2.8rem}
+figure{margin:0}figure>a{display:block}figure img{display:block;width:100%;height:auto}figcaption{font-size:.94rem;line-height:1.7;color:#666;margin-top:1rem;text-align:left}.teaser-section figcaption{text-align:center}
+.section{padding:2.7rem 1.5rem}.hero.is-light{background:#f7f7f7;border:0}
+.title.is-3{font-size:1.8rem;font-weight:600!important;padding:0;margin-bottom:1.6rem!important;color:#363636}.title.is-3::after{display:none}
+.content.has-text-justified{font-size:1rem;line-height:1.8;color:#4a4a4a}
+.content.has-text-justified p{margin:0}
+.title.is-4{font-size:1.2rem;font-weight:600;margin-bottom:1rem}
+.table-container{margin-bottom:.8rem}.results-table{font-size:.73rem;white-space:nowrap;border-collapse:collapse}.results-table td,.results-table th{padding:.7em .6em;vertical-align:middle;text-align:center}.results-table td:first-child,.results-table .method-col{text-align:left}.results-table thead{background:#f7f7f7}.results-table th{font-weight:600;color:#444}.results-table td{border-color:#eee}.results-table .ours{background:#edf4fc}.group-start{border-top:1.5px solid #bbb}.base-editor{color:#777}.table-note{font-size:.82rem;color:#777;line-height:1.7}.qualitative-title{margin-top:2.4rem}
+.bibtex-header{margin-bottom:1rem}.bibtex-header .title{margin:0!important}.copy-bibtex-btn{border:1px solid #ddd;background:#f7f7f7;color:#555;box-shadow:none;border-radius:4px;font-size:.8rem;padding:.45rem .8rem;font-weight:400}.copy-bibtex-btn:hover{background:#eee;transform:none}
+pre{background:#f5f5f5!important;border:0!important;border-radius:3px!important;box-shadow:none;font-size:.8rem!important;line-height:1.7}code{background:transparent!important;color:#444!important}#copy-status{font-size:.8rem;color:#777;margin:.5rem 0 0;min-height:1rem}
+.footer{border:0;background:#fafafa;padding:2rem 1.5rem;font-size:.78rem;color:#999}.footer p+p{margin-top:.35rem}
+@media(max-width:768px){.publication-header .hero-body{padding:2rem 1.1rem 1.3rem}.publication-title{font-size:2rem!important;line-height:1.23!important;letter-spacing:-.4px}.author-block{margin-inline:.4rem}.affiliations{font-size:.85rem}.publication-authors{font-size:1rem!important}.publication-links{gap:7px}.publication-links .button{width:auto!important;margin:0!important;font-size:.8rem!important;padding:.5rem .8rem!important;height:36px}.teaser-section{padding:.5rem 1rem 1.8rem}.section{padding:2rem 1.1rem}.title.is-3{font-size:1.6rem}.content.has-text-justified{font-size:.95rem;text-align:left!important}figcaption{font-size:.82rem}.results-table{font-size:.7rem}.table-note{font-size:.75rem}.footer{font-size:.72rem}.table-container{max-width:100%}}

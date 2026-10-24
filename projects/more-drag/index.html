@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MoRe-Drag: Drag as Evidence | NeurIPS 2026</title>
+  <meta name="description" content="MoRe-Drag: Motion-Grounded Latent Recomposition for Drag-Based Editing. NeurIPS 2026. Xinyu Pu, Hongsong Wang, Jie Gui, Pan Zhou.">
+  <meta name="author" content="Xinyu Pu, Hongsong Wang, Jie Gui, Pan Zhou">
+  <meta property="og:title" content="MoRe-Drag: Drag as Evidence | NeurIPS 2026">
+  <meta property="og:description" content="Motion-Grounded Latent Recomposition for Drag-Based Editing.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://xinyu-pu.github.io/projects/more-drag/">
+  <meta property="og:image" content="https://xinyu-pu.github.io/projects/more-drag/assets/teaser.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="citation_title" content="Drag as Evidence: Motion-Grounded Latent Recomposition for Drag-Based Editing">
+  <meta name="citation_author" content="Pu, Xinyu">
+  <meta name="citation_author" content="Wang, Hongsong">
+  <meta name="citation_author" content="Gui, Jie">
+  <meta name="citation_author" content="Zhou, Pan">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="Advances in Neural Information Processing Systems">
+  <meta name="citation_pdf_url" content="https://xinyu-pu.github.io/projects/more-drag/assets/paper.pdf">
+  <link rel="canonical" href="https://xinyu-pu.github.io/projects/more-drag/">
+  <link rel="icon" type="image/png" href="assets/drag_icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/geodrag.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<main>
+  <section class="hero publication-header">
+    <div class="hero-body">
+      <div class="container is-max-desktop has-text-centered">
+        <h1 class="title is-1 publication-title">Drag as Evidence: Motion-Grounded Latent Recomposition for Drag-Based Editing</h1>
+        <div class="is-size-5 publication-authors">
+          <span class="author-block"><a href="https://xinyu-pu.github.io/">Xinyu Pu</a><sup>1</sup></span>
+          <span class="author-block"><a href="https://hongsong-wang.github.io/">Hongsong Wang</a><sup>1,*</sup></span>
+          <span class="author-block"><a href="https://guijiejie.github.io/">Jie Gui</a><sup>1,2,*</sup></span>
+          <span class="author-block"><a href="https://panzhous.github.io/">Pan Zhou</a><sup>3</sup></span>
+        </div>
+        <div class="affiliations"><span><sup>1</sup>Southeast University</span> <span><sup>2</sup>Purple Mountain Laboratories</span> <span><sup>3</sup>Singapore Management University</span></div>
+        <p class="conference">NeurIPS 2026</p>
+        <p class="eql-cntrb"><sup>*</sup>Corresponding authors</p>
+        <div class="publication-links">
+          <a class="button is-rounded paper-button" href="assets/paper.pdf" target="_blank" rel="noopener"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6M9 16h6"/></svg></span><span>Paper</span></a>
+          <a class="button is-rounded arxiv-button" href="https://arxiv.org/abs/2609.36755" target="_blank" rel="noopener"><span class="arxiv-mark" aria-hidden="true">χ</span><span>arXiv</span></a>
+          <span class="button is-rounded code-button" aria-label="Code coming soon"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"/></svg></span><span>Code (coming soon)</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="teaser-section">
+    <div class="container is-max-desktop">
+      <figure><a href="assets/teaser.webp" target="_blank" rel="noopener" aria-label="View editing examples at full size"><img src="assets/teaser.webp" width="1600" height="570" alt="Editing comparison from Figure 1: point inputs, warped images, DragDiffusion, FastDrag, Inpaint4Drag, LongCat-Image-Edit, and MoRe-Drag on lion and crocodile examples" fetchpriority="high"></a><figcaption><strong>MoRe-Drag</strong> uses pixel-space warping as motion evidence to achieve accurate drag control with natural appearance.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section hero is-light" id="abstract">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-centered">Abstract</h2>
+          <div class="content has-text-justified"><p>Modern image editors excel at semantic manipulation and visual synthesis, yet remain limited in precise spatial control, motivating the development of drag-based editing. However, existing drag-based methods often struggle to balance drag accuracy with natural, plausible, and intent-aligned generation. We propose <strong>MoRe-Drag</strong>, a motion-grounded drag-based editing method. Our key insight is to treat pixel-space warping as coarse motion evidence, and to inject this evidence into the generative sampling trajectory. Specifically, MoRe-Drag performs region-aware latent recomposition over refinement, inpainting, and anchor regions, coupled with stage-adaptive conditioning that progressively shifts from motion-grounded structure formation to semantic refinement. We further support an instruction-free interface by adapting the MLLM-based text encoder for drag-aware instruction inference. Experiments on DragBench-SR and DragBench-DR show that MoRe-Drag substantially improves drag precision over strong base editors and achieves superior drag accuracy among SOTA drag-based methods, while delivering strong semantic consistency and visually realistic results. Code and dataset will be publicly released.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="framework">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Framework</h2>
+      <figure><a href="assets/framework.webp" target="_blank" rel="noopener" aria-label="View MoRe-Drag framework at full size"><img src="assets/framework.webp" width="1600" height="792" alt="MoRe-Drag framework with region-aware latent recomposition and generation-stage adaptive conditioning" loading="lazy"></a><figcaption><strong>Overview of MoRe-Drag.</strong> Region-aware recomposition injects motion evidence into refinement, inpainting, and preservation regions. Generation-stage adaptive conditioning uses the warped image at early timesteps to establish motion-consistent structure, then switches to the original image and the user or inferred instruction for semantic and appearance refinement.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section" id="experiments">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Experiments</h2>
+      <h3 class="title is-4">Quantitative Results</h3>
+      <div class="table-container" role="region" aria-label="Results on DragBench-SR and DragBench-DR; scroll horizontally on small screens" tabindex="0">
+        <table class="table is-fullwidth results-table">
+          <thead><tr><th rowspan="2" scope="col" class="method-col">Method</th><th colspan="3" scope="colgroup">DragBench-SR</th><th colspan="3" scope="colgroup">DragBench-DR</th></tr><tr><th scope="col">MD ↓</th><th scope="col">CP ↑</th><th scope="col">PF ↑</th><th scope="col">MD ↓</th><th scope="col">CP ↑</th><th scope="col">PF ↑</th></tr></thead>
+          <tbody>
+            <tr><td>DragDiffusion</td><td>41.08±0.43</td><td>92.75±0.38</td><td>77.15±1.49</td><td>31.61±0.23</td><td><strong>96.46±0.43</strong></td><td>78.45±0.95</td></tr>
+            <tr><td>DragNoise</td><td>47.64±1.08</td><td>79.00±0.25</td><td>61.56±0.31</td><td>30.05±0.01</td><td>91.46±1.34</td><td>81.02±0.18</td></tr>
+            <tr><td>GoodDrag</td><td>28.94±0.40</td><td>94.50±0.13</td><td>76.50±0.39</td><td>23.21±0.12</td><td>95.36±0.24</td><td>83.94±0.04</td></tr>
+            <tr><td>FastDrag</td><td>23.17±0.19</td><td>94.00±0.25</td><td>79.62±4.38</td><td>29.50±0.12</td><td>92.73±0.73</td><td>75.60±1.63</td></tr>
+            <tr><td>ContextDrag*</td><td>19.07</td><td>92.25</td><td>82.00</td><td>21.66</td><td>90.90</td><td>83.78</td></tr>
+            <tr><td>Inpaint4Drag</td><td>19.79±0.18</td><td>93.00±0.13</td><td>81.00±0.04</td><td>21.37±0.32</td><td>88.53±0.25</td><td>82.77±0.76</td></tr>
+            <tr><td>+ FLUX.1-Fill-dev</td><td>18.96±0.18</td><td>94.69±0.53</td><td>81.41±1.41</td><td>21.16±0.28</td><td>91.70±0.49</td><td>77.19±1.40</td></tr>
+            <tr class="group-start base-editor"><td>Qwen-Image-Edit</td><td>50.48±0.12</td><td>94.57±0.63</td><td>83.59±0.76</td><td>47.90±0.27</td><td>92.43±0.41</td><td>88.17±0.03</td></tr>
+            <tr><td>+ MoRe-Drag</td><td>23.85±0.62</td><td>90.15±0.12</td><td>70.96±0.58</td><td>26.35±0.17</td><td>87.31±0.00</td><td>78.75±0.89</td></tr>
+            <tr class="group-start base-editor"><td>LongCat-Image-Edit</td><td>53.62±0.09</td><td>94.00±0.50</td><td>92.08±1.17</td><td>46.73±0.24</td><td>91.28±0.55</td><td>91.20±0.10</td></tr>
+            <tr class="ours"><td><strong>+ MoRe-Drag (Ours)</strong></td><td><strong>18.54±0.22</strong></td><td><strong>96.36±0.38</strong></td><td><strong>86.36±4.06</strong></td><td><strong>20.03±0.21</strong></td><td>93.15±0.23</td><td><strong>84.82±0.98</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">Results from Table 1. MD: Mean Distance (↓); CP: Concept Preservation (↑); PF: Prompt Following (↑). CP and PF are scaled by 100. Results are averaged over three runs with standard deviations; * denotes results reported in the original paper. Bold indicates the best result among drag-based methods; base text editors are excluded from highlighting.</p>
+      <h3 class="title is-4 qualitative-title">Qualitative Comparisons</h3>
+      <figure><a href="assets/comparisons.webp" target="_blank" rel="noopener" aria-label="View qualitative comparisons at full size"><img src="assets/comparisons.webp" width="1800" height="1150" alt="Figure 6: qualitative comparisons with LongCat-Image-Edit, DragDiffusion, DragNoise, GoodDrag, FastDrag, Inpaint4Drag, and MoRe-Drag" loading="lazy"></a><figcaption>Qualitative comparisons with state-of-the-art editing methods. Blue points denote handles; red points denote targets. Zoomed views highlight local structural fidelity.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header"><h2 class="title is-3">BibTeX</h2><button class="copy-bibtex-btn" id="copy-citation" type="button" aria-label="Copy BibTeX">Copy</button></div>
+      <pre><code id="bibtex-code">@inproceedings{pu2026more,
+  title={Drag as Evidence: Motion-Grounded Latent Recomposition for Drag-Based Editing},
+  author={Xinyu Pu and Hongsong Wang and Jie Gui and Pan Zhou},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2026},
+  eprint={2609.36755},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2609.36755}
+}</code></pre>
+      <p id="copy-status" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container is-max-desktop has-text-centered"><p>Adapted from <a href="../geodrag/">GeoDrag</a> and the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a>, based on <a href="https://nerfies.github.io/">Nerfies</a>.</p><p>Website template licensed under <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p></div>
+</footer>
+</body>
+</html>
