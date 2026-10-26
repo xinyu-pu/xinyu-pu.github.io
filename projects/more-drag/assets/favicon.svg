@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <title>MoRe-Drag</title>
+  <rect width="32" height="32" rx="8" fill="#6551ad"/>
+  <g fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 20v-1A10 10 0 0 1 19 9h2m-3-4 4 4-4 4"/>
+  </g>
+  <circle cx="9" cy="23" r="3.2" fill="#7dd3fc"/>
+  <circle cx="25.5" cy="9" r="2.3" fill="#fda4af"/>
+</svg>
