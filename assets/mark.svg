@@ -1,12 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
-  <title id="title">Minimal line drawing of a programmer</title>
-  <rect width="64" height="64" fill="#ffffff"/>
-  <g fill="none" stroke="#17243a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M25 13c0-6 3-9 8-9s8 3 8 9v4c0 6-4 10-9 10s-8-4-8-10v-4"/>
-    <path d="M25 13c4 1 9 0 13-3M29 27v3m6-3v3"/>
-    <path d="M28 30c-8 1-14 5-17 12L7 54c-1 3 1 5 4 5h42c3 0 5-2 4-5l-4-12c-3-7-9-11-17-12"/>
-    <path d="M19 37c-3 4-4 9-4 14m30-14c3 4 4 9 4 14"/>
-    <rect x="18" y="35" width="28" height="18" rx="2" fill="#ffffff"/>
-    <path d="m27 41-4 3 4 3M37 41l4 3-4 3M34 39l-4 10"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" role="img" aria-labelledby="title">
+  <title id="title">Xinyu Pu</title>
+  <circle cx="16" cy="16" r="16" fill="#6551ad"/>
+  <text x="15.2" y="25" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="27" fill="white">P</text>
 </svg>

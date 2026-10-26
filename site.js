@@ -11,27 +11,8 @@ const lightboxCaption = document.getElementById('lightbox-caption');
 const lightboxClose = lightbox?.querySelector('.lightbox-close');
 const contactRevealButtons = [...document.querySelectorAll('[data-contact-reveal]')];
 const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
-const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-const favicon = document.getElementById('site-favicon');
-const faviconFrames = [
-  'assets/mark.svg?v=8',
-  'assets/mark-typing-2.svg?v=5',
-  'assets/mark-typing-3.svg?v=5'
-];
-let faviconTimer;
 let explicitTheme = false;
 try { explicitTheme = ['light', 'dark'].includes(localStorage.getItem('xinyu-theme')); } catch (_) {}
-function updateFaviconAnimation() {
-  window.clearInterval(faviconTimer);
-  if (!favicon) return;
-  let frame = 0;
-  favicon.href = faviconFrames[frame];
-  if (reducedMotion.matches) return;
-  faviconTimer = window.setInterval(() => {
-    frame = (frame + 1) % faviconFrames.length;
-    favicon.href = faviconFrames[frame];
-  }, 520);
-}
 function announceCount() {
   const count = papers.filter(paper => !paper.hidden).length;
   document.getElementById('filter-status').textContent = root.dataset.language === 'zh' ? `显示 ${count} 篇论文` : `Showing ${count} publications`;
@@ -97,6 +78,4 @@ themeButton.addEventListener('click', () => {
 systemTheme.addEventListener('change', event => {
   if (!explicitTheme) { root.dataset.theme = event.matches ? 'dark' : 'light'; updateThemeControl(); }
 });
-reducedMotion.addEventListener('change', updateFaviconAnimation);
-updateFaviconAnimation();
 document.getElementById('copyright-year').textContent = new Date().getFullYear();
