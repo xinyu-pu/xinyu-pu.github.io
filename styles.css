@@ -402,3 +402,21 @@ html[data-theme=dark] .news-list:hover::-webkit-scrollbar-thumb{background:#777}
 
 /* Emphasize the CV download, placed after the section navigation. */
 nav a.nav-cv{font-weight:600;color:var(--link)}
+
+/* More concise experience details with clearer header typography. */
+.experience-panel{padding:10px 14px}
+.experience-panel-header{padding-bottom:6px;gap:10px}
+.experience-panel-heading{display:flex;align-items:baseline;flex-wrap:wrap;gap:3px 12px}
+.experience-panel-heading h3{font-size:13px;line-height:1.4}
+.experience-panel-heading p{font-size:12px;line-height:1.4;margin:0}
+.experience-pills>span{font-size:11.5px;padding:2px 7px}
+.experience-facts{gap:4px 16px;margin-top:6px;font-size:12.5px;line-height:1.45}
+.experience-facts dt{font-size:11px}
+.experience-facts .ranking-line{display:inline;margin:0}
+@media(max-width:560px){.experience-panel{padding:10px 12px}.experience-panel-heading h3{font-size:13px}.experience-panel-heading p{font-size:12px}.experience-pills>span{font-size:11px}.experience-facts{font-size:12px}}
+
+/* Balance facts across two columns; reserve full width for works and rankings. */
+.experience-facts{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);column-gap:20px;row-gap:5px}
+.experience-facts .experience-fact--wide{grid-column:1/-1}
+.experience-facts dd{overflow-wrap:break-word}
+@media(max-width:760px){.experience-facts{grid-template-columns:1fr}.experience-fact--wide{grid-column:auto}}
