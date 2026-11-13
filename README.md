@@ -1,6 +1,6 @@
 # Xinyu Pu · 蒲鑫宇 — Academic Homepage
 
-独立的中英文学术主页，纯 HTML / CSS / JavaScript，无构建步骤。使用本地图片和系统字体，可直接部署至 GitHub Pages。
+独立的中英文学术主页，纯 HTML / CSS / JavaScript，无构建步骤。使用本地图片和自托管字体，可直接部署至 GitHub Pages。
 
 ## 预览与维护
 
@@ -49,3 +49,7 @@ TMM 保留“2025 年 12 月录用”，补入用户提供 PDF 上的 DOI 10.110
 第四版已检查 JavaScript 语法、本地资源、HTML 标签和 ID；浏览器验证语言和主题切换、News 滚动、论文筛选、学校详情展开、论文图片预览窗及图片加载。桌面和手机窄屏无水平溢出。
 
 仓库根目录即 GitHub Pages 发布目录；`.nojekyll` 会让 GitHub Pages 直接发布现有静态文件，无需运行 Jekyll。
+
+## 本地字体（2026-11）
+
+主页英文使用 Outfit，中文使用 Noto Sans SC，正文和导航共用同一套字体。字体、Unicode 分片样式和 SIL OFL 许可证均保存在 `assets/fonts/`，无需访问第三方字体服务，也不依赖访客设备预装字体。所有字重使用可变字体，中文分片由浏览器按页面字符需要加载。保留完整分片以支持后续内容更新；加载失败时回退至苹方、微软雅黑和系统无衬线字体。字体来源详见 `assets/fonts/README.txt`。

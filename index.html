@@ -12,9 +12,11 @@
 <meta property="og:image" content="assets/portrait.jpg">
 <link rel="icon" href="assets/mark-32.png?v=9" type="image/png" sizes="32x32">
 <link id="site-favicon" rel="icon" href="assets/mark.svg?v=9" type="image/svg+xml" sizes="any">
-<link rel="stylesheet" href="styles.css?v=12">
+<link rel="preload" href="assets/fonts/outfit-001.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts/fonts.css?v=1">
+<link rel="stylesheet" href="styles.css?v=51">
 <script>(function(){var language='en',theme;try{language=localStorage.getItem('xinyu-language')==='zh'?'zh':'en';theme=localStorage.getItem('xinyu-theme')}catch(e){}document.documentElement.dataset.language=language;document.documentElement.lang=language==='zh'?'zh-CN':'en';document.documentElement.dataset.theme=theme==='light'||theme==='dark'?theme:(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')})()</script>
-<script src="site.js?v=14" defer>
+<script src="site.js?v=21" defer>
 </script>
 </head>
 <body>
@@ -25,11 +27,14 @@
 <header class="header">
 <div class="header-inner">
 <nav aria-label="Main navigation">
-<a href="#about" class="active" aria-current="page">
+<a href="#about" class="active" aria-current="location">
 <span lang="en">About</span>
 <span lang="zh-CN">关于</span>
 </a>
 <a href="files/Xinyu_Pu_CV.pdf" target="_blank" rel="noopener">CV</a>
+<a href="#news"><span lang="en">News</span><span lang="zh-CN">动态</span></a>
+<a href="#journey"><span lang="en">Education</span><span lang="zh-CN">教育经历</span></a>
+<a href="#publications"><span lang="en">Publications</span><span lang="zh-CN">论文</span></a>
 </nav>
 <div class="language-switch" role="group" aria-label="Language / 语言">
 <button type="button" data-set-language="en" aria-pressed="true" lang="en">EN</button>
@@ -53,18 +58,13 @@
 </h1>
 <div class="profile-links">
 <a href="mailto:xinyupu02@gmail.com">
-<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-<rect x="3" y="5" width="18" height="14" rx="2"/>
-<path d="m3 6 9 7 9-7"/>
-</svg>
+<svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v1l-10 6L2 7V6a2 2 0 0 1 2-2Zm-2 5.3 9.5 5.7a1 1 0 0 0 1 0L22 9.3V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2Z"/></svg>
 <span lang="en">Email</span>
 <span lang="zh-CN">邮箱</span>
 </a>
 <span aria-hidden="true">/</span>
 <a href="https://scholar.google.com/citations?user=PVe5xFUAAAAJ&amp;hl=en">
-<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-<path d="m2 9 10-5 10 5-10 5-10-5zM6 11v6c3 3 9 3 12 0v-6M22 9v8"/>
-</svg>Google Scholar</a>
+<span class="icon profile-scholar" aria-hidden="true">&#xe9d4;</span>Google Scholar</a>
 <span aria-hidden="true">/</span>
 <a href="https://www.alphaxiv.org/@xinyu-pu">
 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -78,33 +78,30 @@
 </svg>GitHub</a>
 <span aria-hidden="true">/</span>
 <a href="files/Xinyu_Pu_CV.pdf" target="_blank" rel="noopener">
-<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-<path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8zM14 3v5h5M8 12h8M8 16h6"/>
-</svg>
+<svg class="icon" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-288-128 0c-17.7 0-32-14.3-32-32L224 0 64 0zM256 0l0 128 128 0L256 0zM112 256l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
 <span lang="en">CV</span>
 <span lang="zh-CN">简历</span>
 </a>
 </div>
 <div class="profile-body">
 <img class="portrait" src="assets/portrait.jpg" width="1169" height="1363" alt="Xinyu Pu / 蒲鑫宇" fetchpriority="high">
-<p lang="en">I am a final-year M.S. student at <a href="https://www.seu.edu.cn/">Southeast University</a>, where I am advised by <a href="https://hongsong-wang.github.io/">Prof. Hongsong Wang</a> and <a href="https://guijiejie.github.io/index.html">Prof. Jie Gui</a>. I expect to graduate in June 2027. I am currently a visiting student at the <a href="https://www.lv-lab.org/SMU/index.html">Learning and Vision Lab (LV Lab)</a> at Singapore Management University, working closely with <a href="https://panzhous.github.io/">Prof. Pan Zhou</a>. Before starting my master's degree, I received a B.Eng. in Information Security from <a href="https://www.swu.edu.cn/">Southwest University</a> in 2024 and conducted research with <a href="https://www.researchgate.net/profile/Che-Hangjun">Prof. Hangjun Che</a>.</p>
-<p lang="zh-CN">我目前是<a href="https://www.seu.edu.cn/">东南大学</a>网络与信息安全专业硕士三年级学生，师从<a href="https://hongsong-wang.github.io/">王洪松教授</a>和<a href="https://guijiejie.github.io/index.html">桂杰教授</a>，预计于 2027 年 6 月毕业。现于新加坡管理大学<a href="https://www.lv-lab.org/SMU/index.html">Learning and Vision Lab（LV Lab）</a>访学，并与 <a href="https://panzhous.github.io/">Pan Zhou（周攀）教授</a>合作开展研究。本科阶段，我就读于<a href="https://www.swu.edu.cn/">西南大学</a>信息安全专业，于 2024 年获得工学学士学位，期间曾在<a href="https://www.researchgate.net/profile/Che-Hangjun">车杭骏教授</a>指导下参与科研工作。</p>
+<p lang="en">I'm in the final year of my M.S. at <a href="https://www.seu.edu.cn/">Southeast University</a>, supervised by <a href="https://hongsong-wang.github.io/">Prof. Hongsong Wang</a> and <a href="https://guijiejie.github.io/index.html">Prof. Jie Gui</a>. I also work with <a href="https://panzhous.github.io/">Prof. Pan Zhou</a> as a visiting student at the <a href="https://www.lv-lab.org/SMU/index.html">Learning and Vision Lab (LV Lab)</a>, Singapore Management University. My research journey began at <a href="https://www.swu.edu.cn/">Southwest University</a> with <a href="https://www.researchgate.net/profile/Che-Hangjun">Prof. Hangjun Che</a>, where I earned my B.Eng. in 2024.</p>
+<p lang="zh-CN">我现在是<a href="https://www.seu.edu.cn/">东南大学</a>的硕士三年级学生，师从<a href="https://hongsong-wang.github.io/">王洪松教授</a>和<a href="https://guijiejie.github.io/index.html">桂杰教授</a>。目前在新加坡管理大学 <a href="https://www.lv-lab.org/SMU/index.html">Learning and Vision Lab（LV Lab）</a> 访学，与<a href="https://panzhous.github.io/">周攀教授</a>合作。我于 2024 年毕业于<a href="https://www.swu.edu.cn/">西南大学</a>，获得工学学士学位，也是在那里跟随<a href="https://www.researchgate.net/profile/Che-Hangjun">车杭骏教授</a>开始了科研。</p>
 <p lang="en">My current research centers on <strong>generative AI</strong>, with particular interests in world models and image/video/3D generation. I am also interested in multimodal understanding and its connections to generative modeling. Before moving into generative modeling, I worked on multi-view learning. If you are working on similar topics, I would be happy to exchange ideas and explore potential collaborations. Feel free to reach out via 📧 <a href="mailto:xinyupu02@gmail.com">xinyupu02@gmail.com</a> or 💬 <button class="contact-reveal" type="button" data-contact-reveal data-show-label="Show WeChat ID" data-hide-label="Hide WeChat ID" aria-expanded="false" aria-controls="wechat-id-en">Show WeChat ID</button><span class="contact-value" id="wechat-id-en" hidden></span>.</p>
-<p lang="zh-CN">我目前主要关注<strong>生成式人工智能</strong>，尤其是世界模型以及图像、视频和三维生成。我也对多模态理解及其与生成模型之间的联系感兴趣。在转向生成建模之前，我的研究主要围绕多视图学习展开。如果你也关注这些方向，我很乐意交流想法，也期待探索潜在的合作机会。欢迎通过 📧 <a href="mailto:xinyupu02@gmail.com">xinyupu02@gmail.com</a> 或 💬 <button class="contact-reveal" type="button" data-contact-reveal data-show-label="显示微信号" data-hide-label="隐藏微信号" aria-expanded="false" aria-controls="wechat-id-zh">显示微信号</button><span class="contact-value" id="wechat-id-zh" hidden></span> 与我联系。</p>
+<p lang="zh-CN">我主要研究<strong>生成式人工智能</strong>，关注世界模型、图像、视频和三维生成，也想探索多模态理解如何帮助生成模型。在此之前，我做过一些多视图学习方面的研究。如果你也对这些方向感兴趣，欢迎找我交流，一起讨论有意思的问题。可以通过 📧 <a href="mailto:xinyupu02@gmail.com">xinyupu02@gmail.com</a> 或 💬 <button class="contact-reveal" type="button" data-contact-reveal data-show-label="显示微信号" data-hide-label="隐藏微信号" aria-expanded="false" aria-controls="wechat-id-zh">显示微信号</button><span class="contact-value" id="wechat-id-zh" hidden></span> 联系我。</p>
 </div>
 <p class="research-interests">
 <strong lang="en">Research interests:</strong>
 <strong lang="zh-CN">研究兴趣：</strong> <span lang="en">Generative AI, Image/Video/3D Generation, World Models, and Multimodal Understanding.</span>
 <span lang="zh-CN">生成式人工智能、图像/视频/三维生成、世界模型与多模态理解。</span>
 </p>
-<p class="research-interests" lang="en" style="margin-top: 1.25rem;">I am seeking <strong>Ph.D. opportunities starting in Fall 2027</strong> in these areas. If my background and research interests align with your group, I would be grateful for the opportunity to discuss potential Ph.D. positions.</p>
-<p class="research-interests" lang="zh-CN" style="margin-top: 1.25rem;">我正在寻找<strong>2027 年秋季入学的博士机会</strong>。如果我的研究背景与贵组方向契合，我非常期待有机会进一步交流博士招生与研究合作的可能性。</p>
+<p class="research-interests" lang="en" style="margin-top: 1.25rem;">I am seeking <strong>Ph.D. opportunities starting in Fall 2027</strong>. If my background and research interests align with your group, I would be grateful for the opportunity to discuss potential Ph.D. positions.</p>
+<p class="research-interests" lang="zh-CN" style="margin-top: 1.25rem;">我计划申请<strong>2027 年秋季入学的博士项目</strong>。如果您正在招收博士生，也觉得我们的研究兴趣相近，欢迎与我联系！</p>
 </section>
 <section id="news" class="section news-section">
 <div class="section-heading">
 <div>
 <h2>
-<svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 1.15 3.85L17 8l-3.85 1.15L12 13l-1.15-3.85L7 8l3.85-1.15L12 3zM18 14l.8 2.2L21 17l-2.2.8L18 20l-.8-2.2L15 17l2.2-.8L18 14zM5 13l.65 1.85L7.5 15.5l-1.85.65L5 18l-.65-1.85-1.85-.65 1.85-.65L5 13z"/></svg>
 <span lang="en">News</span>
 <span lang="zh-CN">最新动态</span>
 </h2>
@@ -113,61 +110,222 @@
 <div class="news-list" role="region" aria-label="News: scroll for earlier updates / 动态：滚动查看更多" tabindex="0">
 <div class="news-item">
 <time datetime="2026-10">2026.10</time>
-<p lang="en">I am honored to receive the <strong>National Scholarship</strong>! 🎉🎉</p>
-<p lang="zh-CN">获得<strong>国家奖学金</strong>！🎉🎉</p>
+<span class="news-category"><span lang="en">Scholarship</span><span lang="zh-CN">奖学金</span></span>
+<p lang="en">🏆 I’m honored to receive the <strong>National Scholarship</strong>!</p>
+<p lang="zh-CN">🏆 很荣幸获得<strong>国家奖学金</strong>！</p>
 </div>
 <div class="news-item">
 <time datetime="2026-09-25">2026.09</time>
-<p lang="en">🎉 Our paper <strong>MoRe-Drag</strong> is accepted to <strong>NeurIPS 2026</strong>!</p>
-<p lang="zh-CN">🎉 我们的论文 <strong>MoRe-Drag</strong> 被 <strong>NeurIPS 2026</strong> 录用！</p>
+<span class="news-category"><span lang="en">Research</span><span lang="zh-CN">研究</span></span>
+<p lang="en">🎉 <strong>MoRe-Drag</strong> (first author) has been accepted to <strong>NeurIPS 2026</strong>!</p>
+<p lang="zh-CN">🎉 <strong>MoRe-Drag</strong>（第一作者）被 <strong>NeurIPS 2026</strong> 录用！</p>
 </div>
 <div class="news-item">
 <time datetime="2026-05-01">2026.05</time>
-<p lang="en">Joined the <a href="https://www.lv-lab.org/SMU/index.html">LV Lab</a> at SMU as a visiting student.</p>
-<p lang="zh-CN">加入新加坡管理大学的 <a href="https://www.lv-lab.org/SMU/index.html">LV Lab</a>，担任访问学生。</p>
+<span class="news-category"><span lang="en">Visiting</span><span lang="zh-CN">访学</span></span>
+<p lang="en">👋 I’ve joined the <a href="https://www.lv-lab.org/SMU/index.html">LV Lab</a> at SMU as a visiting student. Looking forward to exploring 3D generation!</p>
+<p lang="zh-CN">👋 来到新加坡管理大学 <a href="https://www.lv-lab.org/SMU/index.html">LV Lab</a> 访学，期待探索三维生成！</p>
 </div>
 <div class="news-item">
 <time datetime="2026-01-26">2026.01</time>
-<p lang="en">
-<a href="https://arxiv.org/abs/2509.25740">GeoDrag</a> is accepted to <strong>ICLR 2026</strong>.</p>
-<p lang="zh-CN">
-<a href="https://arxiv.org/abs/2509.25740">GeoDrag</a> 被 <strong>ICLR 2026</strong> 录用。</p>
+<span class="news-category"><span lang="en">Research</span><span lang="zh-CN">研究</span></span>
+<p lang="en">🎉 <a href="https://arxiv.org/abs/2509.25740">GeoDrag</a> (first author) has been accepted to <strong>ICLR 2026</strong>!</p>
+<p lang="zh-CN">🎉 <a href="https://arxiv.org/abs/2509.25740">GeoDrag</a>（第一作者）被 <strong>ICLR 2026</strong> 录用！</p>
 </div>
 <div class="news-item">
 <time datetime="2025-12-31">2025.12</time>
-<p lang="en">Our work on incomplete multi-view clustering is accepted to <strong>IEEE TMM</strong>.</p>
-<p lang="zh-CN">关于不完整多视图聚类的工作被 <strong>IEEE TMM</strong> 录用。</p>
+<span class="news-category"><span lang="en">Research</span><span lang="zh-CN">研究</span></span>
+<p lang="en">🎉 Our work on incomplete multi-view clustering, <strong>SSR</strong> (first author), has been accepted to <strong>IEEE TMM</strong>!</p>
+<p lang="zh-CN">🎉 我们的不完整多视图聚类工作 <strong>SSR</strong>（第一作者）被 <strong>IEEE TMM</strong> 录用！</p>
 </div>
 <div class="news-item">
 <time datetime="2024-11-29">2024.11</time>
-<p lang="en">
-<a href="https://doi.org/10.1016/j.neunet.2024.106944">Two-step Graph Propagation</a> is published online in <strong>Neural Networks</strong>.</p>
-<p lang="zh-CN">
-<a href="https://doi.org/10.1016/j.neunet.2024.106944">Two-step Graph Propagation</a> 在 <strong>Neural Networks</strong> 在线发表。</p>
+<span class="news-category"><span lang="en">Research</span><span lang="zh-CN">研究</span></span>
+<p lang="en">📄 <a href="https://doi.org/10.1016/j.neunet.2024.106944">Two-step Graph Propagation</a> (co-first author) is now online in <strong>Neural Networks</strong>!</p>
+<p lang="zh-CN">📄 <a href="https://doi.org/10.1016/j.neunet.2024.106944">Two-step Graph Propagation</a>（共同第一作者）已在 <strong>Neural Networks</strong> 在线发表！</p>
 </div>
 <div class="news-item">
 <time datetime="2024-07-15">2024.07</time>
-<p lang="en">Our tensorial subspace learning paper is accepted to <strong>ACM MM 2024</strong>.</p>
-<p lang="zh-CN">张量子空间学习相关论文被 <strong>ACM MM 2024</strong> 录用。</p>
+<span class="news-category"><span lang="en">Research</span><span lang="zh-CN">研究</span></span>
+<p lang="en">🎉 Happy to share that <strong>ELRSSL</strong> (co-first author), our work on tensorial subspace learning, has been accepted to <strong>ACM MM 2024</strong>!</p>
+<p lang="zh-CN">🎉 好消息！我们的张量子空间学习工作 <strong>ELRSSL</strong>（共同第一作者）被 <strong>ACM MM 2024</strong> 录用！</p>
 </div>
 <div class="news-item">
 <time datetime="2023-10-31">2023.10</time>
-<p lang="en">Our robust multiview clustering paper is accepted to <strong>IEEE TCSS</strong>.</p>
-<p lang="zh-CN">鲁棒多视图聚类相关论文被 <strong>IEEE TCSS</strong> 录用。</p>
+<span class="news-category"><span lang="en">Research</span><span lang="zh-CN">研究</span></span>
+<p lang="en">🎉 <strong>RWLTA</strong> (first author), our work on robust multi-view clustering, has been accepted to <strong>IEEE TCSS</strong>!</p>
+<p lang="zh-CN">🎉 我们的鲁棒多视图聚类工作 <strong>RWLTA</strong>（第一作者）被 <strong>IEEE TCSS</strong> 录用！</p>
 </div>
 </div>
 </section>
+<section id="journey" class="section">
+<div class="section-heading">
+<h2>
+<span lang="en">Education &amp; Research Experience</span>
+<span lang="zh-CN">教育与研究经历</span>
+</h2>
+<div class="research-summary-entry"><span class="summary-invite"><span lang="en">More about my research, see</span><span lang="zh-CN">更多研究经历，见</span></span><button class="research-summary-toggle" id="research-summary-toggle" type="button" aria-expanded="false" aria-controls="research-summary"><span lang="en">Research Summary</span><span lang="zh-CN">研究概述</span><span class="summary-chevron" aria-hidden="true"></span></button></div>
+</div>
+<p class="section-hint">
+<span lang="en">Click an institution below to expand details.</span>
+<span lang="zh-CN">点击下方卡片，了解详细经历。</span>
+</p>
+<div class="experience-grid"><button class="experience-card" id="experience-smu" type="button" aria-expanded="false" aria-controls="experience-smu-panel">
+<span class="experience-logo">
+<img src="assets/institutions/smu.svg" alt="LV Lab @ SMU logo" width="68" height="68" loading="lazy">
+</span><span class="experience-copy"><strong><span lang="en">LV Lab @ SMU</span><span lang="zh-CN">LV Lab @ 新加坡管理大学</span></strong><span class="experience-role">
+<span lang="en">Visiting Student</span>
+<span lang="zh-CN">访问学生</span>
+</span><span class="experience-meta"><span class="experience-date">
+<span lang="en">2026.05 — Present</span>
+<span lang="zh-CN">2026.05 — 至今</span>
+</span><span class="experience-location"><span lang="en">Singapore</span><span lang="zh-CN">新加坡</span></span></span></span></button><button class="experience-card" id="education-seu" type="button" aria-expanded="false" aria-controls="education-seu-panel">
+<span class="experience-logo">
+<img src="assets/institutions/seu.png" alt="Southeast University logo" width="68" height="68" loading="lazy">
+</span><span class="experience-copy"><strong><span lang="en">ICA Group @ SEU</span><span lang="zh-CN">ICA Group @ 东南大学</span></strong><span class="experience-role">
+<span lang="en">Master's Student</span>
+<span lang="zh-CN">硕士研究生</span>
+</span><span class="experience-meta"><span class="experience-date"><span lang="en">2024.09 — Present</span><span lang="zh-CN">2024.09 — 至今</span></span><span class="experience-location"><span lang="en">Nanjing, China</span><span lang="zh-CN">中国 · 南京</span></span></span></span></button><button class="experience-card" id="education-swu" type="button" aria-expanded="false" aria-controls="education-swu-panel">
+<span class="experience-logo">
+<img src="assets/institutions/swu-emblem.png" alt="Southwest University logo" width="68" height="68" loading="lazy">
+</span><span class="experience-copy"><strong>
+<span lang="en">Southwest University</span>
+<span lang="zh-CN">西南大学</span>
+</strong><span class="experience-role">
+<span lang="en">Bachelor's Degree</span>
+<span lang="zh-CN">工学学士</span>
+</span><span class="experience-meta"><span class="experience-date">
+<span lang="en">2020 — 2024</span>
+<span lang="zh-CN">2020 — 2024</span>
+</span><span class="experience-location"><span lang="en">Chongqing, China</span><span lang="zh-CN">中国 · 重庆</span><span class="hometown-card-note" aria-label="My hometown"><svg viewBox="0 0 124 44" aria-hidden="true"><path d="M36 5C28 6 23 15 18 28M18 28l-2-7M18 28l6-4"/></svg><span>my hometown ^_^</span></span></span></span></span></button></div><div class="experience-panels"><section class="experience-panel" id="experience-smu-panel" aria-labelledby="experience-smu" hidden>
+<div class="experience-panel-header"><span class="experience-logo">
+<img src="assets/institutions/smu.svg" alt="LV Lab @ SMU logo" width="68" height="68" loading="lazy">
+</span><div class="experience-panel-heading"><h3><span lang="en">Singapore Management University</span><span lang="zh-CN">新加坡管理大学</span></h3><p><span lang="en">LV Lab @ SMU</span><span lang="zh-CN">LV Lab @ 新加坡管理大学</span> · <span lang="en">Singapore</span><span lang="zh-CN">新加坡</span></p></div><div class="experience-pills"><span>
+<span lang="en">Visiting Student</span>
+<span lang="zh-CN">访问学生</span>
+</span><span>
+<span lang="en">2026.05 — Present</span>
+<span lang="zh-CN">2026.05 — 至今</span>
+</span></div></div>
+<dl class="experience-facts"><div class="experience-fact experience-fact--wide"><dt>
+<span lang="en">Lab</span>
+<span lang="zh-CN">实验室</span>
+</dt><dd>
+<a href="https://www.lv-lab.org/SMU/index.html">Learning and Vision Lab (LV Lab)</a>
+</dd></div><div class="experience-fact"><dt>
+<span lang="en">Advisor</span>
+<span lang="zh-CN">导师</span>
+</dt><dd>
+<a href="https://panzhous.github.io/">Pan Zhou (周攀)</a>
+</dd></div><div class="experience-fact experience-fact--wide"><dt>
+<span lang="en">Rankings</span>
+<span lang="zh-CN">排名</span>
+</dt><dd>
+<span class="ranking-line">CSRankings (2025–2026): <a href="https://csrankings.org/#/fromyear/2025/toyear/2026/index?ai&amp;world">AI #24</a> · <a href="https://csrankings.org/#/fromyear/2025/toyear/2026/index?vision&amp;world">CV #61</a>
+</span>
+<span class="ranking-line">
+<a href="https://www.topuniversities.com/universities/singapore-management-university">QS 2027: #=411</a>
+</span>
+</dd></div></dl></section><section class="experience-panel" id="education-seu-panel" aria-labelledby="education-seu" hidden>
+<div class="experience-panel-header"><span class="experience-logo">
+<img src="assets/institutions/seu.png" alt="Southeast University logo" width="68" height="68" loading="lazy">
+</span><div class="experience-panel-heading"><h3><span lang="en">Southeast University</span><span lang="zh-CN">东南大学</span></h3><p><span lang="en">ICA Group @ SEU</span><span lang="zh-CN">ICA Group @ 东南大学</span> · <span lang="en">Nanjing, China</span><span lang="zh-CN">中国 · 南京</span></p></div><div class="experience-pills"><span>
+<span lang="en">Master's Student</span>
+<span lang="zh-CN">硕士研究生</span>
+</span><span><span lang="en">2024.09 — Present</span><span lang="zh-CN">2024.09 — 至今</span></span></div></div>
+<dl class="experience-facts"><div class="experience-fact experience-fact--wide"><dt><span lang="en">Group</span><span lang="zh-CN">研究所</span></dt><dd><a href="https://guijiejie.github.io/group.html"><span lang="en">Intelligent Computing and sAfety/security Group (ICA Group)</span><span lang="zh-CN">智能计算与安全研究所（ICA Group）</span></a></dd></div><div class="experience-fact"><dt>
+<span lang="en">Degree</span>
+<span lang="zh-CN">学位</span>
+</dt><dd>
+<span lang="en">M.S. in Network and Information Security</span>
+<span lang="zh-CN">网络与信息安全硕士</span>
+</dd></div><div class="experience-fact experience-fact--wide"><dt>
+<span lang="en">Status</span>
+<span lang="zh-CN">学校类型</span>
+</dt><dd>
+<span lang="en">Project 985 · Project 211 · Double First-Class</span>
+<span lang="zh-CN">“985 工程” · “211 工程” · “双一流”建设高校</span>
+</dd></div><div class="experience-fact"><dt><span lang="en">Advisor</span><span lang="zh-CN">导师</span></dt><dd><a href="https://guijiejie.github.io/index.html">Jie Gui（桂杰）</a></dd></div><div class="experience-fact"><dt><span lang="en">Collaboration</span><span lang="zh-CN">科研合作</span></dt><dd><a href="https://hongsong-wang.github.io/">Hongsong Wang（王洪松）</a></dd></div><div class="experience-fact"><dt>
+<span lang="en">GPA</span>
+<span lang="zh-CN">成绩</span>
+</dt><dd>91.88 / 100</dd></div><div class="experience-fact"><dt>
+<span lang="en">Rank</span>
+<span lang="zh-CN">学业排名</span>
+</dt><dd>
+<span lang="en">11 / 398 (school-wide · Top 3%)</span>
+<span lang="zh-CN">11 / 398（全院 · 前 3%）</span>
+</dd></div><div class="experience-fact experience-fact--wide"><dt>
+<span lang="en">Rankings</span>
+<span lang="zh-CN">排名</span>
+</dt><dd>
+<span class="ranking-line">CSRankings (2025–2026): <a href="https://csrankings.org/#/fromyear/2025/toyear/2026/index?ai&amp;world">AI #14</a> · <a href="https://csrankings.org/#/fromyear/2025/toyear/2026/index?vision&amp;world">CV #40</a>
+</span>
+<span class="ranking-line">
+<a href="https://www.topuniversities.com/universities/southeast-university">QS 2027: #=335</a> · <a href="https://www.shanghairanking.com/universities/southeast-university">ARWU 2026: #89</a>
+</span>
+</dd></div></dl></section><section class="experience-panel" id="education-swu-panel" aria-labelledby="education-swu" hidden>
+<div class="experience-panel-header"><span class="experience-logo">
+<img src="assets/institutions/swu-emblem.png" alt="Southwest University logo" width="68" height="68" loading="lazy">
+</span><div class="experience-panel-heading"><h3><span lang="en">Southwest University</span><span lang="zh-CN">西南大学</span></h3><p>
+<span lang="en">Southwest University</span>
+<span lang="zh-CN">西南大学</span>
+ · <span lang="en">Chongqing, China</span><span lang="zh-CN">中国 · 重庆</span><span class="hometown-note"><svg viewBox="0 0 44 24" aria-hidden="true"><path d="M42 14C29 24 17 20 3 11M3 11l9-1M3 11l4 8"/></svg><span>my hometown ^_^</span></span></p></div><div class="experience-pills"><span>
+<span lang="en">Bachelor's Degree</span>
+<span lang="zh-CN">工学学士</span>
+</span><span>
+<span lang="en">2020 — 2024</span>
+<span lang="zh-CN">2020 — 2024</span>
+</span></div></div>
+<dl class="experience-facts"><div class="experience-fact"><dt>
+<span lang="en">Degree</span>
+<span lang="zh-CN">学位</span>
+</dt><dd>
+<span lang="en">B.Eng. in Information Security</span>
+<span lang="zh-CN">信息安全工学学士</span>
+</dd></div><div class="experience-fact experience-fact--wide"><dt>
+<span lang="en">Status</span>
+<span lang="zh-CN">学校类型</span>
+</dt><dd>
+<span lang="en">Project 211 · Project 985 Innovation Platform · Double First-Class</span>
+<span lang="zh-CN">“211 工程” · “985 工程优势学科创新平台” · “双一流”建设高校</span>
+</dd></div><div class="experience-fact"><dt>
+<span lang="en">Advisor</span>
+<span lang="zh-CN">导师</span>
+</dt><dd>
+<a href="https://www.researchgate.net/profile/Che-Hangjun">Hangjun Che</a>
+</dd></div><div class="experience-fact"><dt>
+<span lang="en">GPA</span>
+<span lang="zh-CN">成绩</span>
+</dt><dd>89.5 / 100 · 4.15 / 5.0</dd></div><div class="experience-fact"><dt>
+<span lang="en">Honor</span>
+<span lang="zh-CN">荣誉</span>
+</dt><dd>
+<span lang="en">Outstanding Graduate, 2024</span>
+<span lang="zh-CN">2024 年优秀毕业生</span>
+</dd></div><div class="experience-fact"><dt>
+<span lang="en">Rank</span>
+<span lang="zh-CN">学业排名</span>
+</dt><dd>
+<span lang="en">3 / 82 (Top 4%)</span>
+<span lang="zh-CN">3 / 82（前 4%）</span>
+</dd></div><div class="experience-fact experience-fact--wide"><dt>
+<span lang="en">Rankings</span>
+<span lang="zh-CN">排名</span>
+</dt><dd>
+<span class="ranking-line">
+<a href="https://www.topuniversities.com/universities/southwest-university">QS 2027: #951–1000</a> · <a href="https://www.shanghairanking.com/universities/southwest-university">ARWU 2026: #301–400</a>
+</span>
+</dd></div></dl></section></div><section class="research-summary" id="research-summary" aria-labelledby="research-summary-toggle" hidden><div class="research-summary-inner"><ol class="research-timeline"><li><div class="research-period"><span>2026.05 — <span lang="en">Present</span><span lang="zh-CN">至今</span></span><img src="assets/institutions/smu.svg" alt="" width="23" height="23"><strong>LV Lab @ SMU</strong></div><p><span lang="en">With the support of <a href="https://panzhous.github.io/">Prof. Pan Zhou</a>, I joined the Learning and Vision Lab at Singapore Management University as a visiting student. I am currently working on <strong>3D generation</strong>.</span><span lang="zh-CN">在<a href="https://panzhous.github.io/">周攀教授</a>的支持下，我来到新加坡管理大学 LV Lab 访学，目前主要做<strong>三维生成</strong>方面的研究。</span></p></li><li><div class="research-period"><span>2024.09 — <span lang="en">Present</span><span lang="zh-CN">至今</span></span><img src="assets/institutions/seu.png" alt="" width="23" height="23"><strong>ICA Group @ SEU</strong></div><p><span lang="en">At Southeast University, I am supervised by <a href="https://hongsong-wang.github.io/">Prof. Hongsong Wang</a> and <a href="https://guijiejie.github.io/index.html">Prof. Jie Gui</a>. Here, my research interests shifted to <strong>generative AI</strong>, and I also began working with <a href="https://panzhous.github.io/">Prof. Pan Zhou</a>. Together, we developed <a href="projects/geodrag/">GeoDrag</a> (ICLR 2026), which brings 3D geometry into drag-based image editing, and <a href="projects/more-drag/">MoRe-Drag</a> (NeurIPS 2026), which uses motion evidence to guide latent recomposition for more precise edits.</span><span lang="zh-CN">读研后，我在<a href="https://hongsong-wang.github.io/">王洪松教授</a>和<a href="https://guijiejie.github.io/index.html">桂杰教授</a>的指导下，将研究重心转向了<strong>生成式人工智能</strong>，也从这时开始与<a href="https://panzhous.github.io/">周攀教授</a>合作。这段时间，我们一起完成了两项拖拽式图像编辑工作： <a href="projects/geodrag/">GeoDrag</a>（ICLR 2026）利用三维几何信息，让编辑结果更准确、结构更一致； <a href="projects/more-drag/">MoRe-Drag</a>（NeurIPS 2026）则利用运动信息引导潜空间重组，让图像更准确地响应拖拽操作。</span></p></li><li><div class="research-period"><span>2020 — 2024</span><img src="assets/institutions/swu-emblem.png" alt="" width="23" height="23"><strong>Southwest University</strong></div><p><span lang="en">I received my B.Eng. in Information Security from Southwest University, where I began doing research under the guidance of <a href="https://www.researchgate.net/profile/Che-Hangjun">Prof. Hangjun Che</a> and have continued working with him since. Our work on multi-view learning includes <a href="https://ieeexplore.ieee.org/document/10367779/">RWLTA</a> (IEEE TCSS 2023), <a href="https://dl.acm.org/doi/10.1145/3664647.3681573">ELRSSL</a> (ACM MM 2024), <a href="https://doi.org/10.1016/j.neunet.2024.106944">TGP</a> (Neural Networks 2025), and <a href="https://doi.org/10.1109/TMM.2026.3694539">SSR</a> (IEEE TMM 2026). I have known Prof. Che for many years. He has been a caring mentor and the person who first guided me into research.</span><span lang="zh-CN">我在西南大学读完本科，获得了信息安全工学学士学位。也是从那时起，我一直跟随<a href="https://www.researchgate.net/profile/Che-Hangjun">车杭骏教授</a>做研究，主要围绕多视图学习，相关工作包括 <a href="https://ieeexplore.ieee.org/document/10367779/">RWLTA</a>（IEEE TCSS 2023）、<a href="https://dl.acm.org/doi/10.1145/3664647.3681573">ELRSSL</a>（ACM MM 2024）、<a href="https://doi.org/10.1016/j.neunet.2024.106944">TGP</a>（Neural Networks 2025）和 <a href="https://doi.org/10.1109/TMM.2026.3694539">SSR</a>（IEEE TMM 2026）。和车老师认识多年，他给了我很多指导和关心，是一位好导师，也是我科研路上的引路人。</span></p></li></ol><p class="research-outlook"><span lang="en">Looking back, I have been lucky to meet kind supervisors and like-minded friends. Their support, and the feedback and small rewards along the way, have helped me grow little by little. Looking ahead, I hope to keep learning and do work that I find really interesting and meaningful in this fast-changing world.</span><span lang="zh-CN">回头看，很庆幸一路上遇到了这么多好老师和志同道合的朋友。他们的支持，还有一路上收到的反馈和小小的正向激励，让我一点点成长。往后也希望自己继续保持好奇，在这个变化很快的时代，做些自己真正感兴趣、也有意义的工作。</span></p></div></section></section>
 <section id="publications" class="section">
 <div class="section-heading">
 <div>
 <h2>
-<svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A3.5 3.5 0 0 1 7.5 2H11v17H7.5A3.5 3.5 0 0 0 4 22V5.5zM20 5.5A3.5 3.5 0 0 0 16.5 2H13v17h3.5A3.5 3.5 0 0 1 20 22V5.5z"/></svg>
 <span lang="en">Selected Publications</span>
 <span lang="zh-CN">代表论文</span>
 </h2>
 </div>
 <a class="section-aside" href="https://scholar.google.com/citations?user=PVe5xFUAAAAJ&hl=en">
-<svg class="scholar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5-10-5zM6 11v6c3 3 9 3 12 0v-6"/><path d="M22 9v6"/></svg>
+<span class="scholar-icon scholar-brand" aria-hidden="true">&#xe9d4;</span>
 <span lang="en">Google Scholar</span>
 <span lang="zh-CN">学术主页</span></a>
 </div>
@@ -187,35 +345,35 @@
 </button>
 </div>
 <span class="equal-note">
-<span lang="en">* Equal contribution</span>
-<span lang="zh-CN">* 共同贡献</span>
+<span lang="en"><span class="equal-mark">*</span> Equal contribution</span>
+<span lang="zh-CN"><span class="equal-mark">*</span> 共同第一作者</span>
 </span>
 </div>
 <p id="filter-status" class="sr-only" aria-live="polite">
 </p>
 <div class="publications">
 <article class="paper" data-category="generation">
-<a class="paper-figure" href="assets/papers/moredrag.png" target="_blank" rel="noopener" aria-label="MoRe-Drag framework overview — open full-size image">
-<img src="assets/papers/moredrag-thumb.webp" alt="MoRe-Drag framework overview" width="480" height="300" loading="lazy">
+<a class="paper-figure" href="assets/papers/moredrag-poster.png" target="_blank" rel="noopener" aria-label="MoRe-Drag — NeurIPS 2026 poster — open full-size image">
+<img src="assets/papers/moredrag-poster-thumb.jpg" alt="MoRe-Drag — NeurIPS 2026 poster" width="640" height="311" loading="lazy">
 </a>
 <div class="paper-content">
 <h3><a href="https://arxiv.org/abs/2609.36755">Drag as Evidence: Motion-Grounded Latent Recomposition for Drag-Based Editing</a></h3>
 <p class="authors"><strong>Xinyu Pu</strong>, Hongsong Wang, Jie Gui, Pan Zhou</p>
-<p class="publication-venue"><strong>NeurIPS 2026</strong><span class="venue-divider" aria-hidden="true">|</span><em>Advances in Neural Information Processing Systems</em><span class="venue-ranks"><span class="venue-rank venue-rank--ccf" title="China Computer Federation: Class A">CCF-A</span><span class="venue-rank venue-rank--core" title="ICORE 2026: A-star">CORE-A*</span></span></p>
+<p class="publication-venue"><strong class="venue-badge venue-badge--neurips">NeurIPS 2026</strong><span class="venue-divider" aria-hidden="true">|</span><em>Advances in Neural Information Processing Systems</em><span class="venue-ranks"><span class="venue-rank venue-rank--ccf" title="China Computer Federation: Class A">CCF-A</span><span class="venue-rank venue-rank--core" title="ICORE 2026: A-star">CORE-A*</span></span></p>
 <div class="paper-actions">
 <details class="paper-abstract">
 <summary class="paper-action">
-<svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v5h5M9 12h7M9 16h7"/></svg>
+<svg class="paper-action-icon" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-288-128 0c-17.7 0-32-14.3-32-32L224 0 64 0zM256 0l0 128 128 0L256 0zM112 256l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
 <span lang="en">Abs</span><span lang="zh-CN">摘要</span>
 </summary>
 <p class="abstract-copy">Modern image editors excel at semantic manipulation and visual synthesis, yet remain limited in precise spatial control, motivating the development of drag-based editing. However, existing drag-based methods often struggle to balance drag accuracy with natural, plausible, and intent-aligned generation. We propose MoRe-Drag, a motion-grounded drag-based editing method. Our key insight is to treat pixel-space warping as coarse motion evidence, and to inject this evidence into the generative sampling trajectory. Specifically, MoRe-Drag performs region-aware latent recomposition over refinement, inpainting, and anchor regions, coupled with stage-adaptive conditioning that progressively shifts from motion-grounded structure formation to semantic refinement. We further support an instruction-free interface by adapting the MLLM-based text encoder for drag-aware instruction inference. Experiments on DragBench-SR and DragBench-DR show that MoRe-Drag substantially improves drag precision over strong base editors and achieves superior drag accuracy among SOTA drag-based methods, while delivering strong semantic consistency and visually realistic results. Code and dataset will be publicly released.</p>
 </details>
 <a class="paper-action" href="https://arxiv.org/abs/2609.36755">
-<svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10v18H7zM10 8h4M10 12h4M10 16h4"/></svg>arXiv</a>
+<span class="paper-action-icon arxiv-icon" aria-hidden="true">&#xe974;</span>arXiv</a>
 <a class="paper-action" href="projects/more-drag/">
-<svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+<svg class="paper-action-icon" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M352 256c0 22.2-1.2 43.6-3.3 64l-185.3 0c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64l185.3 0c2.2 20.4 3.3 41.8 3.3 64zm28.8-64l123.1 0c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64l-123.1 0c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32l-116.7 0c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0l-176.6 0c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0L18.6 160C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192l123.1 0c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64L8.1 320C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6l176.6 0c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352l116.7 0zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6l116.7 0z"/></svg>
 <span lang="en">Website</span><span lang="zh-CN">项目主页</span></a>
-<span class="paper-release-note"><span lang="en">Code and dataset coming soon.</span><span lang="zh-CN">代码与数据集整理中，即将公开。</span></span>
+<span class="paper-release-note"><span lang="en">Code and dataset coming soon.</span><span lang="zh-CN">代码和数据集正在整理，之后会公开。</span></span>
 </div>
 </div>
 </article>
@@ -229,26 +387,26 @@
 </h3>
 <p class="authors">
 <strong>Xinyu Pu</strong>, Hongsong Wang, Jie Gui, Pan Zhou</p>
-<p class="publication-venue"><strong>ICLR 2026</strong><span class="venue-divider" aria-hidden="true">|</span><em>International Conference on Learning Representations</em><span class="venue-ranks"><span class="venue-rank venue-rank--ccf" title="China Computer Federation: Class A">CCF-A</span><span class="venue-rank venue-rank--core" title="ICORE 2026: A-star">CORE-A*</span></span></p>
+<p class="publication-venue"><strong class="venue-badge venue-badge--iclr">ICLR 2026</strong><span class="venue-divider" aria-hidden="true">|</span><em>International Conference on Learning Representations</em><span class="venue-ranks"><span class="venue-rank venue-rank--ccf" title="China Computer Federation: Class A">CCF-A</span><span class="venue-rank venue-rank--core" title="ICORE 2026: A-star">CORE-A*</span></span></p>
 <div class="paper-actions">
 <details class="paper-abstract">
 <summary class="paper-action">
-<svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v5h5M9 12h7M9 16h7"/></svg>
+<svg class="paper-action-icon" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-288-128 0c-17.7 0-32-14.3-32-32L224 0 64 0zM256 0l0 128 128 0L256 0zM112 256l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
 <span lang="en">Abs</span><span lang="zh-CN">摘要</span>
 </summary>
 <p class="abstract-copy">Interactive point-based image editing serves as a controllable editor, enabling precise and flexible manipulation of image content. However, most drag-based methods operate primarily on the 2D pixel plane with limited use of 3D cues. As a result, they often produce imprecise and inconsistent edits, particularly in geometry-intensive scenarios such as rotations and perspective transformations. To address these limitations, we propose a novel geometry-guided drag-based image editing method—GeoDrag, which addresses three key challenges: 1) incorporating 3D geometric cues into pixel-level editing, 2) mitigating discontinuities caused by geometry-only guidance, and 3) resolving conflicts arising from multi-point dragging. Built upon a unified displacement field that jointly encodes 3D geometry and 2D spatial priors, GeoDrag enables coherent, high-fidelity, and structure-consistent editing in a single forward pass. In addition, a conflict-free partitioning strategy is introduced to isolate editing regions, effectively preventing interference and ensuring consistency. Extensive experiments across various editing scenarios validate the effectiveness of our method, showing superior precision, structural consistency, and reliable multi-point editability. Project page: <a href="https://xinyu-pu.github.io/projects/geodrag">https://xinyu-pu.github.io/projects/geodrag</a>.</p>
 </details>
 <a class="paper-action" href="https://arxiv.org/abs/2509.25740">
-<svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10v18H7zM10 8h4M10 12h4M10 16h4"/></svg>arXiv</a>
+<span class="paper-action-icon arxiv-icon" aria-hidden="true">&#xe974;</span>arXiv</a>
 <a class="paper-action" href="assets/papers/geodrag-poster.png" target="_blank" rel="noopener">
-<svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v12H4zM8 20l4-4 4 4M8 8h8M8 12h5"/></svg>
+<svg class="paper-action-icon" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M0 96C0 60.7 28.7 32 64 32l384 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6l96 0 32 0 208 0c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"/></svg>
 <span lang="en">Poster</span><span lang="zh-CN">海报</span></a>
 <a class="paper-action" href="https://github.com/xinyu-pu/GeoDrag">
-<svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg>
+<svg class="paper-action-icon" viewBox="0 0 496 512" fill="currentColor" aria-hidden="true"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
 <span lang="en">Code</span>
 <span lang="zh-CN">代码</span></a>
 <a class="paper-action" href="https://xinyu-pu.github.io/projects/geodrag/">
-<svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+<svg class="paper-action-icon" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M352 256c0 22.2-1.2 43.6-3.3 64l-185.3 0c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64l185.3 0c2.2 20.4 3.3 41.8 3.3 64zm28.8-64l123.1 0c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64l-123.1 0c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32l-116.7 0c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0l-176.6 0c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0L18.6 160C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192l123.1 0c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64L8.1 320C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6l176.6 0c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352l116.7 0zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6l116.7 0z"/></svg>
 <span lang="en">Website</span>
 <span lang="zh-CN">项目主页</span></a>
 </div>
@@ -262,20 +420,20 @@
 <h3><a href="https://doi.org/10.1109/TMM.2026.3694539">Conquering Missing Views: Scalable Incomplete Multi-View Clustering with Anchor Graph Propagation</a></h3>
 <p class="authors">
 <strong>Xinyu Pu</strong>, Hangjun Che, Deqiang Ouyang, Shouxi Zhao</p>
-<p class="publication-venue"><strong>IEEE TMM 2026</strong><span class="venue-divider" aria-hidden="true">|</span><em>IEEE Transactions on Multimedia</em><span class="venue-ranks"><span class="venue-rank venue-rank--ccf" title="China Computer Federation: Class A">CCF-A</span><span class="venue-rank venue-rank--sci" title="Journal Citation Reports: Q1">SCI-Q1</span></span></p>
+<p class="publication-venue"><strong class="venue-badge venue-badge--tmm">IEEE TMM 2026</strong><span class="venue-divider" aria-hidden="true">|</span><em>IEEE Transactions on Multimedia</em><span class="venue-ranks"><span class="venue-rank venue-rank--ccf" title="China Computer Federation: Class A">CCF-A</span><span class="venue-rank venue-rank--sci" title="Journal Citation Reports: Q1">SCI-Q1</span></span></p>
 <div class="paper-actions">
 <details class="paper-abstract">
 <summary class="paper-action">
-<svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v5h5M9 12h7M9 16h7"/></svg>
+<svg class="paper-action-icon" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-288-128 0c-17.7 0-32-14.3-32-32L224 0 64 0zM256 0l0 128 128 0L256 0zM112 256l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
 <span lang="en">Abs</span><span lang="zh-CN">摘要</span>
 </summary>
 <p class="abstract-copy">Recently, incomplete multi-view clustering has emerged as a powerful solution for discovering consistent cluster structures despite the presence of missing views. When handling incomplete data, existing methods usually reconstruct missing features from observed views or estimate similarities from known inter-sample relationships, yet they often fail to balance clustering performance with computational efficiency. Although anchor graph learning has shown strong effectiveness in multi-view clustering, its extension to incomplete scenarios remains a non-trivial challenge. Furthermore, the reliance on iterative optimization involving coupled variables significantly hinders the scalability of existing models. In response to these challenges, we propose SSR—a method designed for scaling, simplifying, and robustifying multi-view clustering. SSR introduces a scalable framework empowered by a novel anchor selection strategy tailored for incomplete multi-view data. In this framework, graph propagation is employed to impute missing information, enabling effective information diffusion across views. In contrast to traditional methods that rely on computationally intensive iterative optimization, SSR adopts a forward-only, low-complexity design, significantly enhancing scalability. Moreover, isolation masks are incorporated into the graph propagation process to improve robustness. Extensive experiments on multiple datasets demonstrate the superior clustering accuracy and computational efficiency of SSR, establishing it as a practical and efficient solution for multimedia analysis in real-world scenarios.</p>
 </details>
 <a class="paper-action" href="https://doi.org/10.1109/TMM.2026.3694539">
-<svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10v18H7zM10 8h4M10 12h4M10 16h4"/></svg>
+<svg class="paper-action-icon" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"/></svg>
 <span lang="en">Paper</span><span lang="zh-CN">论文</span></a>
 <a class="paper-action" href="https://github.com/xinyu-pu/SSR">
-<svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg>
+<svg class="paper-action-icon" viewBox="0 0 496 512" fill="currentColor" aria-hidden="true"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
 <span lang="en">Code</span><span lang="zh-CN">代码</span></a>
 </div>
 </div>
@@ -289,17 +447,17 @@
 <a href="https://dl.acm.org/doi/10.1145/3664647.3681573">Enhanced Tensorial Self-representation Subspace Learning for Incomplete Multi-view Clustering</a>
 </h3>
 <p class="authors">Hangjun Che*, <strong>Xinyu Pu*</strong>, Deqiang Ouyang, Beibei Li</p>
-<p class="publication-venue"><strong>ACM MM 2024</strong><span class="venue-divider" aria-hidden="true">|</span><em>ACM International Conference on Multimedia</em><span class="venue-ranks"><span class="venue-rank venue-rank--ccf" title="China Computer Federation: Class A">CCF-A</span><span class="venue-rank venue-rank--core" title="ICORE 2026: A-star">CORE-A*</span></span></p>
+<p class="publication-venue"><strong class="venue-badge venue-badge--acmmm">ACM MM 2024</strong><span class="venue-divider" aria-hidden="true">|</span><em>ACM International Conference on Multimedia</em><span class="venue-ranks"><span class="venue-rank venue-rank--ccf" title="China Computer Federation: Class A">CCF-A</span><span class="venue-rank venue-rank--core" title="ICORE 2026: A-star">CORE-A*</span></span></p>
 <div class="paper-actions">
 <details class="paper-abstract">
 <summary class="paper-action">
-<svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v5h5M9 12h7M9 16h7"/></svg>
+<svg class="paper-action-icon" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-288-128 0c-17.7 0-32-14.3-32-32L224 0 64 0zM256 0l0 128 128 0L256 0zM112 256l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
 <span lang="en">Abs</span><span lang="zh-CN">摘要</span>
 </summary>
 <p class="abstract-copy">Incomplete Multi-View Clustering (IMVC) is a promising topic in multimedia as it breaks the data completeness assumption. Most existing methods solve IMVC from the perspective of graph learning. In contrast, self-representation learning enjoys a superior ability to explore relationships among samples. However, only a few works have explored the potentiality of self-representation learning in IMVC. These self-representation methods infer missing entries from the perspective of whole samples, resulting in redundant information. In addition, designing an effective strategy to retain salient features while eliminating noise is rarely considered in IMVC. To tackle these issues, we propose a novel self-representation learning method with missing sample recovery and enhanced low-rank tensor regularization. Specifically, the missing samples are inferred by leveraging the local structure of each view, which is constructed from available samples at the feature level. Then an enhanced tensor norm, referred to as Logarithm-<i>p</i> norm is devised, which can obtain an accurate cross-view description. Our proposed method achieves exact subspace representation in IMVC by leveraging high-order correlations and inferring missing information at the feature level. Extensive experiments on several widely used multi-view datasets demonstrate the effectiveness of the proposed method.</p>
 </details>
 <a class="paper-action" href="https://dl.acm.org/doi/10.1145/3664647.3681573">
-<svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10v18H7zM10 8h4M10 12h4M10 16h4"/></svg>
+<svg class="paper-action-icon" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"/></svg>
 <span lang="en">Paper</span><span lang="zh-CN">论文</span></a>
 </div>
 </div>
@@ -313,17 +471,17 @@
 <a href="https://doi.org/10.1016/j.neunet.2024.106944">Two-step Graph Propagation for Incomplete Multi-view Clustering</a>
 </h3>
 <p class="authors">Xiao Zhang*, <strong>Xinyu Pu*</strong>, Hangjun Che, Cheng Liu, Jun Qin</p>
-<p class="publication-venue"><strong>Neural Networks 2025</strong><span class="venue-divider" aria-hidden="true">|</span><em>Neural Networks</em><span class="venue-ranks"><span class="venue-rank venue-rank--ccf" title="China Computer Federation: Class B">CCF-B</span><span class="venue-rank venue-rank--sci" title="Journal Citation Reports: Q1">SCI-Q1</span></span></p>
+<p class="publication-venue"><strong class="venue-badge venue-badge--nn">Neural Networks 2025</strong><span class="venue-divider" aria-hidden="true">|</span><em>Neural Networks</em><span class="venue-ranks"><span class="venue-rank venue-rank--ccf" title="China Computer Federation: Class B">CCF-B</span><span class="venue-rank venue-rank--sci" title="Journal Citation Reports: Q1">SCI-Q1</span></span></p>
 <div class="paper-actions">
 <details class="paper-abstract">
 <summary class="paper-action">
-<svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v5h5M9 12h7M9 16h7"/></svg>
+<svg class="paper-action-icon" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-288-128 0c-17.7 0-32-14.3-32-32L224 0 64 0zM256 0l0 128 128 0L256 0zM112 256l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
 <span lang="en">Abs</span><span lang="zh-CN">摘要</span>
 </summary>
 <p class="abstract-copy">Incomplete multi-view clustering addresses scenarios where data completeness cannot be guaranteed, diverging from traditional methods that assume fully observed features. Existing approaches often overlook high-order correlations present in multiple similarity graphs, and suffer from inefficiencies due to iterative optimization procedures. To overcome these limitations, we propose a graph-based model leveraging graph propagation to effectively handle incomplete data. The proposed method translates incomplete instances into incomplete graphs, and infers missing entries through a graph propagation strategy, ensuring the inferred data is meaningful and contextually relevant. Specifically, a self-guided graph is constructed to capture global relationships, while partial graphs represent view-specific similarities. The self-guided graph is first completed through self-guided graph propagation, which subsequently aids in the propagation of the partial graphs. The key contribution of graph propagation is to propagate information from complete data to incomplete data. Furthermore, the high-order correlation across multiple views is captured by low-rank tensor learning. To enhance computational efficiency, the optimization procedure is decoupled and implemented in a stepwise manner, eliminating the need for iterative updates. Extensive experiments validate the robustness of the proposed method, demonstrating superior performance compared to state-of-the-art methods, even when all instances are incomplete.</p>
 </details>
 <a class="paper-action" href="https://doi.org/10.1016/j.neunet.2024.106944">
-<svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10v18H7zM10 8h4M10 12h4M10 16h4"/></svg>
+<svg class="paper-action-icon" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"/></svg>
 <span lang="en">Paper</span><span lang="zh-CN">论文</span></a>
 </div>
 </div>
@@ -338,21 +496,21 @@
 </h3>
 <p class="authors">
 <strong>Xinyu Pu</strong>, Hangjun Che, Baicheng Pan, Man-Fai Leung, Shiping Wen</p>
-<p class="publication-venue"><strong>IEEE TCSS 2023</strong><span class="venue-divider" aria-hidden="true">|</span><em>IEEE Transactions on Computational Social Systems</em><span class="venue-ranks"><span class="venue-rank venue-rank--ccf" title="China Computer Federation: Class C">CCF-C</span><span class="venue-rank venue-rank--sci" title="Journal Citation Reports: Q1">SCI-Q1</span></span></p>
+<p class="publication-venue"><strong class="venue-badge venue-badge--tcss">IEEE TCSS 2023</strong><span class="venue-divider" aria-hidden="true">|</span><em>IEEE Transactions on Computational Social Systems</em><span class="venue-ranks"><span class="venue-rank venue-rank--ccf" title="China Computer Federation: Class C">CCF-C</span><span class="venue-rank venue-rank--sci" title="Journal Citation Reports: Q1">SCI-Q1</span></span></p>
 <div class="paper-actions">
 <details class="paper-abstract">
 <summary class="paper-action">
-<svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v5h5M9 12h7M9 16h7"/></svg>
+<svg class="paper-action-icon" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-288-128 0c-17.7 0-32-14.3-32-32L224 0 64 0zM256 0l0 128 128 0L256 0zM112 256l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
 <span lang="en">Abs</span><span lang="zh-CN">摘要</span>
 </summary>
 <p class="abstract-copy">Multiview clustering performs grouping a set of objects by utilizing complementary information from multiple views. Unfortunately, the clustering performance degenerates dramatically if the views are corrupted by noise. To overcome this limitation, we propose a robust multiview clustering approach based on weighted low-rank tensor approximation and noise separation. The proposed model improves the performance through a low-rank approximation function and weighted singular values. The weighted low-rank tensor approximation method considers both prior knowledge and the physical meanings associated with different singular values, leading to superior performance in capturing high-order correlations. Additionally, to eliminate mixed noise, a novel <i>l</i><sub>Cauchy,1</sub> norm is developed to handle outliers, and the <i>l</i><sub>1</sub> and Frobenius norms are used to handle random corruptions and slight perturbations, respectively. A high-efficiency optimization algorithm based on the alternating direction method of multipliers (ADMM) is designed to address the challenging proposed model. Experimental results on nine real-world datasets show that the proposed approach outperforms eight state-of-the-art multiview methods. Furthermore, experiments on various kinds of noise demonstrate the superior robustness of the proposed approach. Especially, in the mixed noise condition, the proposed approach is significantly superior to other methods.</p>
 </details>
 <a class="paper-action" href="https://ieeexplore.ieee.org/document/10367779/">
-<svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10v18H7zM10 8h4M10 12h4M10 16h4"/></svg>
+<svg class="paper-action-icon" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"/></svg>
 <span lang="en">Paper</span>
 <span lang="zh-CN">论文</span></a>
 <a class="paper-action" href="https://github.com/xinyu-pu/TCSS2023-RWLTA-code-improved">
-<svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg>
+<svg class="paper-action-icon" viewBox="0 0 496 512" fill="currentColor" aria-hidden="true"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
 <span lang="en">Code</span>
 <span lang="zh-CN">代码</span></a>
 </div>
@@ -360,264 +518,17 @@
 </article>
 </div>
 </section>
-<section id="journey" class="section">
-<div class="section-heading">
-<h2>
-<svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5L2 9zM6 11.2V17c3.3 2.7 8.7 2.7 12 0v-5.8M22 9v7"/></svg>
-<span lang="en">Education &amp; Research Experience</span>
-<span lang="zh-CN">教育与研究经历</span>
-</h2>
-</div>
-<p class="section-hint">
-<span lang="en">Click an institution below to expand details.</span>
-<span lang="zh-CN">点击下方学校或实验室，展开详情。</span>
-</p>
-<div class="institutions">
-<details class="institution" id="experience-smu">
-<summary>
-<span class="institution-logo">
-<img src="assets/institutions/smu.svg" alt="LV Lab @ SMU logo" width="68" height="68" loading="lazy">
-</span>
-<span class="institution-title">
-<strong>
-<span lang="en">LV Lab @ SMU</span>
-<span lang="zh-CN">LV Lab · 新加坡管理大学</span>
-</strong>
-<span>
-<span lang="en">Visiting Student</span>
-<span lang="zh-CN">访问学生</span>
-</span>
-</span>
-<span class="institution-date">
-<span lang="en">2026.05 — Present</span>
-<span lang="zh-CN">2026.05 — 至今</span>
-</span>
-</summary>
-<div class="institution-details">
-<dl>
-<dt>
-<span lang="en">Institution</span>
-<span lang="zh-CN">学校</span>
-</dt>
-<dd>
-<span lang="en">Singapore Management University</span>
-<span lang="zh-CN">新加坡管理大学</span>
-</dd>
-<dt>
-<span lang="en">Lab</span>
-<span lang="zh-CN">实验室</span>
-</dt>
-<dd>
-<a href="https://www.lv-lab.org/SMU/index.html">Learning and Vision Lab (LV Lab)</a>
-</dd>
-<dt>
-<span lang="en">Role</span>
-<span lang="zh-CN">身份</span>
-</dt>
-<dd>
-<span lang="en">Visiting Student · May 2026–present</span>
-<span lang="zh-CN">访问学生 · 2026 年 5 月至今</span>
-</dd>
-<dt>
-<span lang="en">Advisor</span>
-<span lang="zh-CN">导师</span>
-</dt>
-<dd>
-<a href="https://panzhous.github.io/">Pan Zhou (周攀)</a>
-</dd>
-<dt>
-<span lang="en">Rankings</span>
-<span lang="zh-CN">排名</span>
-</dt>
-<dd>
-<span class="ranking-line">CSRankings (2025–2026): <a href="https://csrankings.org/#/fromyear/2025/toyear/2026/index?ai&amp;world">AI #24</a> · <a href="https://csrankings.org/#/fromyear/2025/toyear/2026/index?vision&amp;world">CV #61</a>
-</span>
-<span class="ranking-line">
-<a href="https://www.topuniversities.com/universities/singapore-management-university">QS 2027: #=411</a>
-</span>
-</dd>
-</dl>
-</div>
-</details>
-<details class="institution" id="education-seu">
-<summary>
-<span class="institution-logo">
-<img src="assets/institutions/seu.png" alt="Southeast University logo" width="68" height="68" loading="lazy">
-</span>
-<span class="institution-title">
-<strong>
-<span lang="en">Southeast University</span>
-<span lang="zh-CN">东南大学</span>
-</strong>
-<span>
-<span lang="en">Master's Student</span>
-<span lang="zh-CN">硕士研究生</span>
-</span>
-</span>
-<span class="institution-date">
-<span lang="en">2024 — Present</span>
-<span lang="zh-CN">2024 — 至今</span>
-</span>
-</summary>
-<div class="institution-details">
-<dl>
-<dt>
-<span lang="en">Degree</span>
-<span lang="zh-CN">学位</span>
-</dt>
-<dd>
-<span lang="en">M.S. in Network and Information Security</span>
-<span lang="zh-CN">网络与信息安全硕士</span>
-</dd>
-<dt>
-<span lang="en">Status</span>
-<span lang="zh-CN">建设类别</span>
-</dt>
-<dd>
-<span lang="en">Project 985 · Project 211 · Double First-Class</span>
-<span lang="zh-CN">“985 工程” · “211 工程” · “双一流”建设高校</span>
-</dd>
-<dt>
-<span lang="en">Location</span>
-<span lang="zh-CN">地点</span>
-</dt>
-<dd>
-<span lang="en">Nanjing, China</span>
-<span lang="zh-CN">中国 · 南京</span>
-</dd>
-<dt>
-<span lang="en">Advisors</span>
-<span lang="zh-CN">导师</span>
-</dt>
-<dd>
-<a href="https://hongsong-wang.github.io/">Hongsong Wang</a> &amp; <a href="https://guijiejie.github.io/index.html">Jie Gui</a>
-</dd>
-<dt>
-<span lang="en">GPA</span>
-<span lang="zh-CN">成绩</span>
-</dt>
-<dd>91.88 / 100</dd>
-<dt>
-<span lang="en">Rank</span>
-<span lang="zh-CN">学业排名</span>
-</dt>
-<dd>
-<span lang="en">11 / 398 (school-wide · Top 3%)</span>
-<span lang="zh-CN">11 / 398（全院 · 前 3%）</span>
-</dd>
-<dt>
-<span lang="en">Rankings</span>
-<span lang="zh-CN">排名</span>
-</dt>
-<dd>
-<span class="ranking-line">CSRankings (2025–2026): <a href="https://csrankings.org/#/fromyear/2025/toyear/2026/index?ai&amp;world">AI #14</a> · <a href="https://csrankings.org/#/fromyear/2025/toyear/2026/index?vision&amp;world">CV #40</a>
-</span>
-<span class="ranking-line">
-<a href="https://www.topuniversities.com/universities/southeast-university">QS 2027: #=335</a> · <a href="https://www.shanghairanking.com/universities/southeast-university">ARWU 2026: #89</a>
-</span>
-</dd>
-</dl>
-</div>
-</details>
-<details class="institution" id="education-swu">
-<summary>
-<span class="institution-logo">
-<img src="assets/institutions/swu-emblem.png" alt="Southwest University logo" width="68" height="68" loading="lazy">
-</span>
-<span class="institution-title">
-<strong>
-<span lang="en">Southwest University</span>
-<span lang="zh-CN">西南大学</span>
-</strong>
-<span>
-<span lang="en">Bachelor's Degree</span>
-<span lang="zh-CN">工学学士</span>
-</span>
-</span>
-<span class="institution-date">
-<span lang="en">2020 — 2024</span>
-<span lang="zh-CN">2020 — 2024</span>
-</span>
-</summary>
-<div class="institution-details">
-<dl>
-<dt>
-<span lang="en">Degree</span>
-<span lang="zh-CN">学位</span>
-</dt>
-<dd>
-<span lang="en">B.Eng. in Information Security</span>
-<span lang="zh-CN">信息安全工学学士</span>
-</dd>
-<dt>
-<span lang="en">Status</span>
-<span lang="zh-CN">建设类别</span>
-</dt>
-<dd>
-<span lang="en">Project 211 · Project 985 Innovation Platform · Double First-Class</span>
-<span lang="zh-CN">“211 工程” · “985 工程优势学科创新平台” · “双一流”建设高校</span>
-</dd>
-<dt>
-<span lang="en">Location</span>
-<span lang="zh-CN">地点</span>
-</dt>
-<dd>
-<span lang="en">Chongqing, China</span>
-<span lang="zh-CN">中国 · 重庆</span>
-</dd>
-<dt>
-<span lang="en">Advisor</span>
-<span lang="zh-CN">导师</span>
-</dt>
-<dd>
-<a href="https://www.researchgate.net/profile/Che-Hangjun">Hangjun Che</a>
-</dd>
-<dt>
-<span lang="en">GPA</span>
-<span lang="zh-CN">成绩</span>
-</dt>
-<dd>89.5 / 100 · 4.15 / 5.0</dd>
-<dt>
-<span lang="en">Honor</span>
-<span lang="zh-CN">荣誉</span>
-</dt>
-<dd>
-<span lang="en">Outstanding Graduate, 2024</span>
-<span lang="zh-CN">2024 年优秀毕业生</span>
-</dd>
-<dt>
-<span lang="en">Rank</span>
-<span lang="zh-CN">学业排名</span>
-</dt>
-<dd>
-<span lang="en">3 / 82 (Top 4%)</span>
-<span lang="zh-CN">3 / 82（前 4%）</span>
-</dd>
-<dt>
-<span lang="en">Rankings</span>
-<span lang="zh-CN">排名</span>
-</dt>
-<dd>
-<span class="ranking-line">
-<a href="https://www.topuniversities.com/universities/southwest-university">QS 2027: #951–1000</a> · <a href="https://www.shanghairanking.com/universities/southwest-university">ARWU 2026: #301–400</a>
-</span>
-</dd>
-</dl>
-</div>
-</details>
-</div>
-</section>
+
 <section id="service" class="section">
 <div class="section-heading">
 <h2>
-<svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5h6M9 3h6v4H9zM7 5H5.5A1.5 1.5 0 0 0 4 6.5v14A1.5 1.5 0 0 0 5.5 22h13a1.5 1.5 0 0 0 1.5-1.5v-14A1.5 1.5 0 0 0 18.5 5H17M8 12h8M8 16h8"/></svg>
 <span lang="en">Academic Service</span>
 <span lang="zh-CN">学术服务</span>
 </h2>
 </div>
-<ul class="service-lines">
-<li><strong><span lang="en">Conference Reviewer</span><span lang="zh-CN">会议审稿人</span></strong>: NeurIPS 2026, ICLR 2027.</li>
-<li><strong><span lang="en">Journal Reviewer</span><span lang="zh-CN">期刊审稿人</span></strong>: IEEE Transactions on Knowledge and Data Engineering.</li>
+<ul class="service-lines" role="list">
+<li><strong><span lang="en">Conference Reviewer</span><span lang="zh-CN">会议审稿</span></strong><span class="service-separator">:</span> <span class="service-venues">NeurIPS 2026, ICLR 2027.</span></li>
+<li><strong><span lang="en">Journal Reviewer</span><span lang="zh-CN">期刊审稿</span></strong><span class="service-separator">:</span> <span class="service-venues">IEEE Transactions on Knowledge and Data Engineering.</span></li>
 </ul>
 </section>
 <div class="footer-contact">
@@ -628,8 +539,8 @@
 <a href="https://www.researchgate.net/profile/Xinyu-Pu-3" aria-label="ResearchGate" title="ResearchGate"><span aria-hidden="true">RG</span></a>
 <a href="https://orcid.org/0009-0005-1203-7382" aria-label="ORCID" title="ORCID"><span aria-hidden="true">iD</span></a>
 </div>
-<p lang="en">I’m always happy to learn something new from brilliant people and see where a good idea takes us. <a href="mailto:xinyupu02@gmail.com">xinyupu02@gmail.com</a></p>
-<p lang="zh-CN">很乐意跟厉害的人学点新东西，也想看看一个好点子能把我们带到哪里。 <a href="mailto:xinyupu02@gmail.com">xinyupu02@gmail.com</a></p>
+<p lang="en">As heaven maintains vigor through movement, a gentleman should constantly strive for self perfection. <a href="mailto:xinyupu02@gmail.com">xinyupu02@gmail.com</a></p>
+<p lang="zh-CN">天行健，君子以自强不息<br><a href="mailto:xinyupu02@gmail.com">xinyupu02@gmail.com</a></p>
 </div>
 <footer>
 <span>© <span id="copyright-year">2026</span> Xinyu Pu · 蒲鑫宇</span>
