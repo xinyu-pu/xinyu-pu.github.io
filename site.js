@@ -30,7 +30,7 @@ function setLanguage(language) {
   root.dataset.language = lang;
   root.lang = lang === 'zh' ? 'zh-CN' : 'en';
   languageButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.setLanguage === lang)));
-  document.title = 'Xinyu Pu';
+  document.title = 'Xinyu Pu · 蒲鑫宇';
   if (lightboxClose) lightboxClose.setAttribute('aria-label', lang === 'zh' ? '关闭图片预览' : 'Close image preview');
   try { localStorage.setItem('xinyu-language', lang); } catch (_) {}
   announceCount();

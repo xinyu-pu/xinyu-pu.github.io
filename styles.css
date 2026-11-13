@@ -399,3 +399,6 @@ html[data-theme=dark] .news-list:hover::-webkit-scrollbar-thumb{background:#777}
 
 /* Keep the expanded navigation comfortable on small screens. */
 @media(max-width:560px){.header-inner{flex-wrap:wrap;gap:0 16px;padding-top:3px;padding-bottom:6px}.header-inner nav{width:100%;justify-content:space-between;gap:10px}.header-inner nav a{font-size:13px;padding:10px 0}.header-inner .language-switch{margin-left:auto}section[id]{scroll-margin-top:110px}}
+
+/* Emphasize the CV download, placed after the section navigation. */
+nav a.nav-cv{font-weight:600;color:var(--link)}
