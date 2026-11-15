@@ -276,3 +276,69 @@ if (typeof ResizeObserver === 'function') {
   if (header) navigationResizeObserver.observe(header);
 }
 updateSectionNavigation();
+
+// Keep native summary keyboard behavior while gently revealing each abstract.
+document.querySelectorAll('.paper-abstract').forEach(details => {
+  const summary = details.querySelector('summary');
+  const copy = details.querySelector('.abstract-copy');
+  // The disclosure stays in the action row; its content occupies a separate row.
+  details.closest('.paper-actions').after(copy);
+  copy.hidden = !details.open;
+  copy.id = `paper-abstract-${[...document.querySelectorAll('.paper-abstract')].indexOf(details)}`;
+  summary.setAttribute('aria-controls', copy.id);
+  summary.setAttribute('aria-expanded', String(details.open));
+  const text = document.createElement('span');
+  text.className = 'abstract-text';
+  text.append(...copy.childNodes);
+  copy.append(text);
+  let animation;
+  let textAnimation;
+  let expanded = details.open;
+  const measure = () => {
+    const style = getComputedStyle(copy);
+    return { height: copy.getBoundingClientRect().height + 'px', opacity: style.opacity,
+      marginTop: style.marginTop, marginBottom: style.marginBottom,
+      paddingTop: style.paddingTop, paddingBottom: style.paddingBottom,
+      borderTopWidth: style.borderTopWidth, borderBottomWidth: style.borderBottomWidth };
+  };
+  const collapsed = { height: '0px', opacity: 0, marginTop: '0px', marginBottom: '0px',
+    paddingTop: '0px', paddingBottom: '0px', borderTopWidth: '0px', borderBottomWidth: '0px' };
+  summary.addEventListener('click', event => {
+    event.preventDefault();
+    expanded = !expanded;
+    summary.setAttribute('aria-expanded', String(expanded));
+    const start = details.open ? measure() : collapsed;
+    const textStyle = getComputedStyle(text);
+    const textStart = details.open
+      ? { opacity: textStyle.opacity, transform: textStyle.transform }
+      : { opacity: 0, transform: 'translateY(-7px)' };
+    animation?.cancel();
+    textAnimation?.cancel();
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !copy.animate) {
+      details.open = expanded;
+      copy.hidden = !expanded;
+      return;
+    }
+    details.open = true;
+    copy.hidden = false;
+    const target = expanded ? measure() : collapsed;
+    const current = copy.animate([start, target], {
+      duration: expanded ? 420 : 240, easing: 'cubic-bezier(.22, 1, .36, 1)', fill: 'both'
+    });
+    textAnimation = text.animate([
+      textStart,
+      expanded ? { opacity: 1, transform: 'translateY(0)' }
+        : { opacity: 0, transform: 'translateY(-4px)' }
+    ], { duration: expanded ? 360 : 150, delay: expanded ? 45 : 0,
+      easing: 'cubic-bezier(.22, 1, .36, 1)', fill: 'both' });
+    animation = current;
+    current.finished.then(() => {
+      if (animation !== current) return;
+      details.open = expanded;
+      copy.hidden = !expanded;
+      current.cancel();
+      textAnimation?.cancel();
+      animation = null;
+    }).catch(() => {});
+  });
+});
